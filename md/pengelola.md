@@ -1,4 +1,4 @@
-[Beranda](../index) &raquo; [Panduan pengguna](index) &raquo; 
+[Beranda](..) &raquo; [Panduan pengguna](.) &raquo; 
 # Pengelola
 
 ## Membuat acara agar muncul pada situs penjualan

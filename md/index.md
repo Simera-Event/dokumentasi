@@ -1,4 +1,4 @@
-[Beranda](../index) &raquo;
+[Beranda](..) &raquo;
 # Panduan pengguna
 
 Siapa yang memerlukan dokumentasi?

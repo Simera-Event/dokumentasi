@@ -1,4 +1,4 @@
-[Beranda](../index) &raquo; [Panduan pengguna](index) &raquo; 
+[Beranda](..) &raquo; [Panduan pengguna](.) &raquo; 
 # Petugas penukaran
 
 ## Masuk ke sistem
