@@ -1,4 +1,4 @@
-<title>Panduan pengguna</title>
+<title>Panduan pengguna | Cara Simera</title>
 
 [Beranda](..) &raquo;
 # Panduan pengguna

@@ -1,4 +1,4 @@
-<title>Pengelola</title>
+<title>Pengelola | Cara Simera</title>
 
 [Beranda](..) &raquo; [Panduan pengguna](.) &raquo; 
 # Pengelola
