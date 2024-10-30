@@ -1,3 +1,5 @@
+<title>Panduan pengguna</title>
+
 [Beranda](..) &raquo;
 # Panduan pengguna
 

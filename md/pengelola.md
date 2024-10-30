@@ -1,3 +1,5 @@
+<title>Pengelola</title>
+
 [Beranda](..) &raquo; [Panduan pengguna](.) &raquo; 
 # Pengelola
 
