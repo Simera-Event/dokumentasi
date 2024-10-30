@@ -1,4 +1,4 @@
-[Beranda](../index.md) &raquo; [Panduan pengguna](index.md) &raquo; 
+[Beranda](../index) &raquo; [Panduan pengguna](index) &raquo; 
 # Petugas pintu
 
 ## Masuk ke sistem

@@ -1,13 +1,13 @@
-[Beranda](../index.md) &raquo;
+[Beranda](../index) &raquo;
 # Panduan pengguna
 
 Siapa yang memerlukan dokumentasi?
 
 - Pengelola
-  - [Pengelola](pengelola.md)
+  - [Pengelola](pengelola)
 - Petugas
-  - [Penukaran](petugas_penukaran.md)
-  - [Pintu](petugas_pintu.md)
+  - [Penukaran](petugas_penukaran)
+  - [Pintu](petugas_pintu)
 - Mitra
-  - [Penyelenggara](penyelenggara.md)
-  - [Penyalur](penyalur.md)
+  - [Penyelenggara](penyelenggara)
+  - [Penyalur](penyalur)
