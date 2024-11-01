@@ -33,7 +33,6 @@
 1. Pilih sembarang acara
 1. Buka menu **Kelola > Acara**
 1. Buat acara baru seperti biasa
-   
    ![gambar](aset/penjualan-1.png)
 1. Klik "Ganti acara"
 1. Pilih acara yang baru saja dibuat
@@ -155,4 +154,4 @@ Lihat [panduan pengguna penyalur, bagian Buat](penyalur#buat)
 
 ---
 
-_Akhir dari dokumen_ | [Kembali ke atas](#)
+_Akhir dari dokumen_ &#x7C; [Kembali ke atas](#)

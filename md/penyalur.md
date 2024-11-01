@@ -37,4 +37,4 @@ Lihat [panduan pengguna petugas penukaran, bagian Tukar](petugas_penukaran#tukar
 
 ---
 
-_Akhir dari dokumen_ | [Kembali ke atas](#)
+_Akhir dari dokumen_ &#x7C; [Kembali ke atas](#)
