@@ -3,26 +3,24 @@
 [Beranda](..) &raquo; [Panduan pengguna](.) &raquo; 
 # Petugas penukaran
 
-<table>
-<tr><th>Daftar isi</th></tr>
-<tr><td>
-
-- [Masuk ke sistem](#masuk-ke-sistem)
-- [Menu Penukaran](#menu-penukaran)
-  - [Tukar](#tukar)
-    - [Tambah lampiran](#tambah-lampiran)
-    - [Hubungkan dan jual](#hubungkan-dan-jual)
-  - [Temukan](#temukan)
-- [Menu Pintu](#menu-pintu)
-  - [Jual](#jual)
-  - [Periksa](#periksa)
+> **Daftar isi**
+> 
+> - [Masuk ke sistem](#masuk-ke-sistem)
+> - [Menu Penukaran](#menu-penukaran)
+>   - [Tukar](#tukar)
+>     - [Tambah lampiran](#tambah-lampiran)
+>     - [Hubungkan dan jual](#hubungkan-dan-jual)
+>   - [Temukan](#temukan)
+> - [Menu Pintu](#menu-pintu)
+>   - [Jual](#jual)
+>   - [Periksa](#periksa)
 
 </td></tr>
 </table>
 
 ## Masuk ke sistem
 **Panduan langkah demi langkah:**
-1. Kunjungi situs sistem [maha.simera.web.id](maha.simera.web.id)
+1. Kunjungi situs sistem [maha.simera.web.id](//maha.simera.web.id)
 1. Masukkan ID pengguna "TBOXCREWXXXX", di mana XXXX adalah nomor urut
 1. Masukkan 6 digit PIN yang sudah diberitahukan sebelumnya
 1. Klik tombol "Masuk"

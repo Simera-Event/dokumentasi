@@ -3,22 +3,17 @@
 [Beranda](..) &raquo; [Panduan pengguna](.) &raquo; 
 # Petugas pintu
 
-<table>
-<tr><th>Daftar isi</th></tr>
-<tr><td>
-
-- [Masuk ke sistem](#masuk-ke-sistem)
-- [Menu Pintu](#menu-pintu)
-  - [Pakai masuk](#pakai-masuk)
-  - [Pakai keluar](#pakai-keluar)
-  - [Periksa](#periksa)
-
-</td></tr>
-</table>
+> **Daftar isi**
+> 
+> - [Masuk ke sistem](#masuk-ke-sistem)
+> - [Menu Pintu](#menu-pintu)
+>   - [Pakai masuk](#pakai-masuk)
+>   - [Pakai keluar](#pakai-keluar)
+>   - [Periksa](#periksa)
 
 ## Masuk ke sistem
 **Panduan langkah demi langkah:**
-1. Kunjungi situs sistem [maha.simera.web.id](maha.simera.web.id)
+1. Kunjungi situs sistem [maha.simera.web.id](//maha.simera.web.id)
 1. Masukkan ID pengguna "GATECREWXXXX", di mana XXXX adalah nomor urut
 1. Masukkan 6 digit PIN yang sudah diberitahukan sebelumnya
 1. Klik tombol "Masuk"

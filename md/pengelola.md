@@ -3,37 +3,32 @@
 [Beranda](..) &raquo; [Panduan pengguna](.) &raquo; 
 # Pengelola
 
-<table>
-<tr><th>Daftar isi</th></tr>
-<tr><td>
-
-- [Membuat acara agar muncul pada situs penjualan](#membuat-acara-agar-muncul-pada-situs-penjualan)
-- [Menu Acara](#menu-acara)
-  - [Laporan](#laporan)
-  - [Pengaturan](#pengaturan)
-  - [Batas penjualan](#batas-penjualan)
-  - [Hapus data](#hapus-data)
-- [Menu Penukaran](#menu-penukaran)
-  - [Entri](#entri)
-  - [Tukar](#tukar)
-  - [Temukan](#temukan)
-- [Menu Pintu](#menu-pintu)
-  - [Siapkan](#siapkan)
-  - [Tetapkan kursi](#tetapkan-kursi)
-  - [Cetak](#cetak)
-  - [Jual](#jual)
-  - [Pakai masuk](#pakai-masuk)
-  - [Pakai keluar](#pakai-keluar)
-  - [Periksa](#periksa)
-- [Menu Pesanan](#menu-pesanan)
-  - [Buat](#buat)
-
-</td></tr>
-</table>
+> **Daftar isi**
+> 
+> - [Membuat acara agar muncul pada situs penjualan](#membuat-acara-agar-muncul-pada-situs-penjualan)
+> - [Menu Acara](#menu-acara)
+>   - [Laporan](#laporan)
+>   - [Pengaturan](#pengaturan)
+>   - [Batas penjualan](#batas-penjualan)
+>   - [Hapus data](#hapus-data)
+> - [Menu Penukaran](#menu-penukaran)
+>   - [Entri](#entri)
+>   - [Tukar](#tukar)
+>   - [Temukan](#temukan)
+> - [Menu Pintu](#menu-pintu)
+>   - [Siapkan](#siapkan)
+>   - [Tetapkan kursi](#tetapkan-kursi)
+>   - [Cetak](#cetak)
+>   - [Jual](#jual)
+>   - [Pakai masuk](#pakai-masuk)
+>   - [Pakai keluar](#pakai-keluar)
+>   - [Periksa](#periksa)
+> - [Menu Pesanan](#menu-pesanan)
+>   - [Buat](#buat)
 
 ## Membuat acara agar muncul pada situs penjualan
 **Panduan langkah demi langkah:**
-1. Kunjungi situs sistem [maha.simera.web.id](maha.simera.web.id)
+1. Kunjungi situs sistem [maha.simera.web.id](//maha.simera.web.id)
 1. Masuk ke sistem dengan akun pengurus atau pengelola
 1. Pilih sembarang acara
 1. Buka menu **Kelola > Acara**
