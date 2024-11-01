@@ -32,15 +32,15 @@
    
    ![gambar](aset/pakaimasuk-1.png)
 1. Jika menggunakan alat pemindai:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Tekan dan tahan tombol pindai pada alat
    1. Arahkan pemindai ke kode, lalu lepaskan tombol pindai
 1. Jika menggunakan papan ketik:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Ketikkan kode pintu secara manual
    1. Tekan Enter, atau klik tombol "Periksa"
 1. Jika menggunakan kamera:
-   1. Aktifkan kamera dengen mengeklik ikon &#x1F4F7;&#xFE0E;
+   1. Aktifkan kamera dengan mengeklik ikon &#x1F4F7;&#xFE0E;
    1. Arahkan kamera ke kode hingga terdengar [bunyi seperti ini](https://maha.simera.web.id/aset/suara/Cursor1.ogg)
 1. Hasil akan ditampilkan di paling atas dalam tabel riwayat
    1. Jika **<font color="green">hijau</font>** dan terdengar [bunyi seperti ini](https://maha.simera.web.id/aset/suara/Chime1.ogg), berarti kode pintu berhasil dipakai masuk
@@ -63,15 +63,15 @@
 
 **Panduan langkah demi langkah:**
 1. Jika menggunakan alat pemindai:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Tekan dan tahan tombol pindai pada alat
    1. Arahkan pemindai ke kode, lalu lepaskan tombol pindai
 1. Jika menggunakan papan ketik:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Ketikkan kode pintu secara manual
    1. Tekan Enter, atau klik tombol "Periksa"
 1. Jika menggunakan kamera:
-   1. Aktifkan kamera dengen mengeklik ikon &#x1F4F7;&#xFE0E;
+   1. Aktifkan kamera dengan mengeklik ikon &#x1F4F7;&#xFE0E;
    1. Arahkan kamera ke kode hingga terdengar [bunyi seperti ini](https://maha.simera.web.id/aset/suara/Cursor1.ogg)
 1. Hasil akan ditampilkan di bawah
    1. Jika **<font color="green">hijau</font>**, berarti kode pintu ditemukan

@@ -39,15 +39,15 @@
    
    ![gambar](aset/tukar-1.png)
 1. Jika menggunakan alat pemindai:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Tekan dan tahan tombol pindai pada alat
    1. Arahkan pemindai ke kode, lalu lepaskan tombol pindai
 1. Jika menggunakan papan ketik:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Ketikkan kode penukaran secara manual
    1. Tekan Enter, atau klik tombol "Periksa"
 1. Jika menggunakan kamera:
-   1. Aktifkan kamera dengen mengeklik ikon &#x1F4F7;&#xFE0E;
+   1. Aktifkan kamera dengan mengeklik ikon &#x1F4F7;&#xFE0E;
    1. Arahkan kamera ke kode hingga terdengar [bunyi seperti ini](https://maha.simera.web.id/aset/suara/Cursor1.ogg)
 1. Hasil akan ditampilkan di paling atas dalam tabel riwayat
    1. Jika **<font color="green">hijau</font>** dan terdengar [bunyi seperti ini](https://maha.simera.web.id/aset/suara/Chime1.ogg), berarti kode penukaran berhasil ditukar
@@ -87,16 +87,17 @@
 1. Ulangi proses jika diperlukan, maksimum 3 lampiran
 1. Untuk menghapus salah satu lampiran yang sudah dipilih, klik pada [X]
 1. Pada tabel kode penukaran, jika menggunakan alat pemindai:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Tekan dan tahan tombol pindai pada alat
    1. Arahkan pemindai ke kode, lalu lepaskan tombol pindai
 1. Pada tabel kode penukaran, jika menggunakan papan ketik:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Ketikkan kode pintu secara manual
    1. Tekan Enter
+   
       **Catatan:** Jika masih ada kotak teks yang berlum terisi, menekan Enter akan memindahkan kursor ke isian selanjutnya. Jika tidak ada, maka keseluruhan formulir akan terkirim.
 1. Pada tabel kode penukaran, jika menggunakan kamera:
-   1. Aktifkan kamera dengen mengeklik ikon &#x1F4F7;&#xFE0E;
+   1. Aktifkan kamera dengan mengeklik ikon &#x1F4F7;&#xFE0E;
    1. Arahkan kamera ke kode hingga terdengar [bunyi seperti ini](https://maha.simera.web.id/aset/suara/Cursor1.ogg)
 1. Ulangi proses untuk semua kode penukaran
 1. Klik tombol "Hubungkan dan Jual"
@@ -112,12 +113,12 @@
 **Panduan langkah demi langkah:**
 1. Klik daftar tarik-turun di samping label "Penyalur:"
 1. Pilih kode penukaran dari penyalur mana yang ingin ditemukan
-1. Aktifkan kursor dengen mengeklik kotak teks
+1. Aktifkan kursor dengan mengeklik kotak teks
 1. Jika menggunakan alat pemindai:
    1. Tekan dan tahan tombol pindai pada alat
    1. Arahkan pemindai ke kode, lalu lepaskan tombol pindai
 1. Jika menggunakan papan ketik:
-   1. Ketikkan kode pintu, nomor kursi, nama, atau nomor pesanan secara manual
+   1. Ketikkan kode penukaran, nomor kursi, nama, atau nomor pesanan secara manual
    1. Tekan Enter, atau klik tombol "Kirim"
 1. Hasil temuan akan ditampilkan pada tabel di bawah
    
@@ -138,15 +139,15 @@
 
 **Panduan langkah demi langkah:**
 1. Jika menggunakan alat pemindai:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Tekan dan tahan tombol pindai pada alat
    1. Arahkan pemindai ke kode, lalu lepaskan tombol pindai
 1. Jika menggunakan papan ketik:
-   1. Aktifkan kursor dengen mengeklik kotak teks
+   1. Aktifkan kursor dengan mengeklik kotak teks
    1. Ketikkan kode pintu secara manual
    1. Tekan Enter, atau klik tombol "Periksa"
 1. Jika menggunakan kamera:
-   1. Aktifkan kamera dengen mengeklik ikon &#x1F4F7;&#xFE0E;
+   1. Aktifkan kamera dengan mengeklik ikon &#x1F4F7;&#xFE0E;
    1. Arahkan kamera ke kode hingga terdengar [bunyi seperti ini](https://maha.simera.web.id/aset/suara/Cursor1.ogg)
 1. Hasil akan ditampilkan di bawah
    1. Jika **<font color="green">hijau</font>**, berarti kode pintu ditemukan
