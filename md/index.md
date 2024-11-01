@@ -23,20 +23,20 @@ Apa peran pengguna yang membutuhkan panduan?
 
 ## Informasi hak akses
 
-| Menu / Peran      | pengelola | penyelenggara | petugas penukaran | petugas pintu | penyalur |
-| ----------------- | - | - | - | - | - |
-| **Acara**         |
+| Menu / Peran      | penge&shy;lola | penye&shy;lenggara | petugas penukaran | petugas pintu | penyalur |
+| ----------------- |:-:|:-:|:-:|:-:|:-:|
+| **Acara**         ||||||
 | Laporan           | v | v | - | - | - |
 | Pengaturan        | v | - | - | - | - |
 | Batas penjualan   | v | - | - | - | - |
 | Hapus data        | v | - | - | - | - |
-| **Penukaran**     |
+| **Penukaran**     ||||||
 | » Entri           | v | - | - | - | v |
 | » Tukar           | v | v | v | - | v |
 | Temukan           | v | v | v | - | - |
 | Riwayat tukar     | v | v | - | - | - |
 | Daftar lengkap    | v | v | - | - | v |
-| **Pintu**         |
+| **Pintu**         ||||||
 | » Siapkan         | v | - | - | - | - |
 | » Tetapkan kursi  | v | - | - | - | - |
 | » Cetak           | v | - | - | - | - |
@@ -46,10 +46,10 @@ Apa peran pengguna yang membutuhkan panduan?
 | Periksa           | v | v | v | v | - |
 | Riwayat pakai     | v | v | - | - | - |
 | Daftar lengkap    | v | v | - | - | - |
-| **Pesanan**       |
+| **Pesanan**       ||||||
 | Buat              | v | v | - | - | v |
 | Daftar lengkap    | v | v | - | - | v |
-| **Kelola**        |
+| **Kelola**        ||||||
 | Acara             | v | - | - | - | - |
 | Pengguna          | v | - | - | - | - |
 | Pencadangan       | v | - | - | - | - |
