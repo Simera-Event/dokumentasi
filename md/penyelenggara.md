@@ -71,3 +71,7 @@ Lihat [panduan pengguna petugas pintu, bagian Pakai keluar](petugas_pintu#pakai-
 
 ### Periksa
 Lihat [panduan pengguna petugas pintu, bagian Periksa](petugas_pintu#periksa)
+
+---
+
+_Akhir dari dokumen_ | [Kembali ke atas](#)

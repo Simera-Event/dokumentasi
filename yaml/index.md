@@ -12,3 +12,7 @@ Apa situs yang dibutuhkan dokumentasinya?
 
 - [Sistem](sistem) (maha.simera.web.id)
 - [Penjualan](lamanlabuh) (www.simera.web.id)
+
+---
+
+_Akhir dari dokumen_ | [Kembali ke atas](#)

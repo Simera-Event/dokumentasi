@@ -152,3 +152,7 @@ Lihat [panduan pengguna petugas pintu, bagian Periksa](petugas_pintu#periksa)
 ## Menu Pesanan
 ### Buat
 Lihat [panduan pengguna penyalur, bagian Buat](penyalur#buat)
+
+---
+
+_Akhir dari dokumen_ | [Kembali ke atas](#)

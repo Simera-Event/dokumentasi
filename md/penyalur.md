@@ -34,3 +34,7 @@ Lihat [panduan pengguna petugas penukaran, bagian Tukar](petugas_penukaran#tukar
 **Tautan:** [https://maha.simera.web.id/pesan](https://maha.simera.web.id/pesan)
 
 **Penjelasan:** Menu ini digunakan untuk membuat pesanan dan melanjutkan ke penerbitan kode penukaran jika "Penerbit kode penukaran" untuk penyalur yang terhubung dengan akun disetel ke "Simera".
+
+---
+
+_Akhir dari dokumen_ | [Kembali ke atas](#)

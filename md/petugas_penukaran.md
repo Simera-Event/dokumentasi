@@ -15,9 +15,6 @@
 >   - [Jual](#jual)
 >   - [Periksa](#periksa)
 
-</td></tr>
-</table>
-
 ## Masuk ke sistem
 **Panduan langkah demi langkah:**
 1. Kunjungi situs sistem [maha.simera.web.id](//maha.simera.web.id)
@@ -156,3 +153,7 @@
    1. Jika **<font color="red">merah</font>**, berarti kode pintu tidak ditemukan
    
    ![gambar](aset/periksa.png)
+
+---
+
+_Akhir dari dokumen_ | [Kembali ke atas](#)

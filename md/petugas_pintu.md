@@ -78,3 +78,7 @@
    1. Jika **<font color="red">merah</font>**, berarti kode pintu tidak ditemukan
    
    ![gambar](aset/periksa.png)
+
+---
+
+_Akhir dari dokumen_ | [Kembali ke atas](#)
