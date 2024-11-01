@@ -3,15 +3,10 @@
 [Beranda](..) &raquo;
 # Panduan pengguna
 
-<table>
-<tr><th>Daftar isi</th></tr>
-<tr><td>
-
-- [Daftar panduan pengguna](#daftar-panduan-pengguna)
-- [Informasi hak akses](#informasi-hak-akses)
-
-</td></tr>
-</table>
+> **Daftar isi**
+> 
+> - [Daftar panduan pengguna](#daftar-panduan-pengguna)
+> - [Informasi hak akses](#informasi-hak-akses)
 
 ## Daftar panduan pengguna
 Apa peran pengguna yang membutuhkan panduan?
@@ -28,7 +23,7 @@ Apa peran pengguna yang membutuhkan panduan?
 
 ## Informasi hak akses
 
-| Menu / Peran | pengelola | penyelenggara | petugas penukaran | petugas pintu | penyalur |
+| Menu / Peran      | pengelola | penyelenggara | petugas penukaran | petugas pintu | penyalur |
 | ----------------- | - | - | - | - | - |
 | **Acara**         |
 | Laporan           | v | v | - | - | - |
