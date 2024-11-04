@@ -77,7 +77,7 @@
 #### Hubungkan dan jual
 **Tautan:** [https://maha.simera.web.id/hubungkan](https://maha.simera.web.id/hubungkan)
 
-**Penjelasan:** Sub-menu ini digunakan untuk menghubungkan kode penukaran dengan kode pintu. Dengan menghubungkan, informasi pembeli dari kode penukaran akan diteruskan ke kode pintu.
+**Penjelasan:** Sub-menu ini digunakan untuk menghubungkan kode penukaran dengan kode pintu. Dengan menghubungkan, informasi pembeli dari kode penukaran akan diteruskan ke kode pintu. Untuk melihat kembali lampiran yang diunggah, gunakan menu **Pintu > Periksa**.
 
 **Panduan langkah demi langkah:**
 1. Periksa kembali nama, nomor identitas, dan info tambahan yang tersedia. Ubah jika diperlukan, misal saat penerima kode pintu (penukar) berbeda dengan pembeli kode penukaran.
@@ -108,7 +108,7 @@
 ### Temukan
 **Tautan:** [https://maha.simera.web.id/temukan](https://maha.simera.web.id/temukan)
 
-**Penjelasan:** Menu ini digunakan untuk menemukan kode penukaran berdasarkan nomor kursi, nama, atau nomor pesanan; maupun memeriksa kode penukaran apakah terdaftar. Lampiran yang diunggah dari menu **Penukaran > Tukar > Tambah lampiran** juga dapat dilihat di halaman ini.
+**Penjelasan:** Menu ini digunakan untuk menemukan kode penukaran berdasarkan nomor kursi, nama, atau nomor pesanan; maupun memeriksa kode penukaran apakah terdaftar. Lampiran yang diunggah dari menu **Penukaran > Tukar > Tambah lampiran** dapat dilihat di halaman ini.
 
 **Panduan langkah demi langkah:**
 1. Klik daftar tarik-turun di samping label "Penyalur:"
@@ -130,12 +130,12 @@
 ### Jual
 **Tautan:** [https://maha.simera.web.id/jual](https://maha.simera.web.id/jual)
 
-**Penjelasan:** Menu ini digunakan untuk menjual kode pintu secara langsung tanpa melalui proses tukar kode penukaran. Informasi pembeli akan langsung disimpan pada kode pintu. Untuk mencetak tiket fisik, masuk ke sistem dengan akun pengurus atau pengelola, lalu gunakan menu **Pintu > Cetak**.
+**Penjelasan:** Menu ini digunakan untuk menjual kode pintu secara langsung tanpa melalui proses tukar kode penukaran. Informasi pembeli akan langsung disimpan pada kode pintu. Untuk melihat kembali lampiran yang diunggah, gunakan menu **Pintu > Periksa**. Untuk mencetak tiket fisik, masuk ke sistem dengan akun pengurus atau pengelola, lalu gunakan menu **Pintu > Cetak**.
 
 ### Periksa
 **Tautan:** [https://maha.simera.web.id/periksa](https://maha.simera.web.id/periksa)
 
-**Penjelasan:** Menu ini digunakan untuk memeriksa kode pintu, apakah terdaftar, dan apakah sudah dipakai. Hanya 1 data yang ditampilkan.
+**Penjelasan:** Menu ini digunakan untuk memeriksa kode pintu, apakah terdaftar, dan apakah sudah dipakai. Hanya 1 data yang ditampilkan. Lampiran yang diunggah dari menu **Pintu > Jual** maupun **Penukaran > Tukar > Hubungkan dan jual** dapat dilihat di halaman ini. Menu ini juga bisa diakses oleh petugas pintu.
 
 **Panduan langkah demi langkah:**
 1. Jika menggunakan alat pemindai:

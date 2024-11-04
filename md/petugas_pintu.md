@@ -59,7 +59,7 @@
 ### Periksa
 **Tautan:** [https://maha.simera.web.id/periksa](https://maha.simera.web.id/periksa)
 
-**Penjelasan:** Menu ini digunakan untuk memeriksa kode pintu, apakah terdaftar, dan apakah sudah dipakai. Hanya 1 data yang ditampilkan.
+**Penjelasan:** Menu ini digunakan untuk memeriksa kode pintu, apakah terdaftar, dan apakah sudah dipakai. Hanya 1 data yang ditampilkan. Lampiran yang diunggah dari menu **Pintu > Jual** maupun **Penukaran > Tukar > Hubungkan dan jual** oleh petugas penukaran dapat dilihat di halaman ini. Menu ini juga bisa diakses oleh petugas penukaran.
 
 **Panduan langkah demi langkah:**
 1. Jika menggunakan alat pemindai:
