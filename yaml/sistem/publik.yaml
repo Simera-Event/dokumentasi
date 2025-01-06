@@ -1,0 +1,65 @@
+---
+openapi: 3.0.3
+info:
+  title: ''
+  version: ''
+paths:
+  /masuk:
+    get:
+      tags:
+        - publik
+      description: |
+        Mendapatkan token untuk masuk ke dalam sistem (jika belum masuk ke sistem).<br/>
+        Mendapatkan informasi sesi, seperti hak akses dan acara terpilih (jika sudah masuk ke sistem).
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              example: {
+                "token": "qwer24k6lm8asdfghj02xcvbnm",
+                "sesi": {
+                  "id": 8,
+                  "pengguna": "TBOXCREW0001",
+                  "nama": "Simera T01",
+                  "pin_belum_diganti": false,
+                  "peran": "petugas_penukaran",
+                  "akses": [ 4, 7, 6, 21 ],
+                  "id_grup": 0,
+                  "grup": "",
+                  "id_mitra": 0,
+                  "mitra": "",
+                  "id_acara": 1,
+                  "acara": "Acara Uji Coba",
+                  "bahasa": "id",
+                  "gaya": "bahari_hijau"
+                }
+              }
+      
+    post:
+      tags:
+        - publik
+      description: |
+        Masuk ke dalam sistem. Bisa menggunakan ID pengguna dan PIN, atau dengan kartu akses.<br/>
+        Jangan kirimkan nilai kosong di `k` jika tidak ingin masuk dengan kartu akses.
+      security:
+        - token: []
+        - cookie: []
+      requestBody:
+        content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  i:
+                    type: string
+                    description: ID pengguna.
+                  p:
+                    type: number
+                    description: PIN.
+                  k:
+                    type: string
+                    description: Hasil pindai kode QR atau NFC kartu akses.
+      responses:
+        302:
+          $ref: 'openapi.yaml#/components/responses/302'

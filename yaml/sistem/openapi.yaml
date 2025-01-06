@@ -1,0 +1,119 @@
+---
+openapi: 3.0.3
+info:
+  title: API Sistem
+  description: |
+    Pengelolaan acara yang ada di Simera dari sisi belakang, seperti kode penukaran dan kode pintu;
+    serta pengambilan laporan dan pengubahan pengaturan dari suatu acara.
+
+    ## <!-- Catatan untuk pengguna Redoc -->
+    <SchemaDefinition schemaRef="#/x-redoc/schema" exampleRef="#/x-redoc/example" />
+
+    ## Otorisasi
+    Ada dua jenis otorisasi yang dapat digunakan, gunakanlah sesuai kebutuhan:
+    1. Dikirimkan sebagai `Authorization` dalam Header HTTP dengan skema Bearer. Cocok untuk pemanggilan API standar.
+    1. Dikirimkan sebagai `PHPSESSID` dalam Cookie. Cocok untuk pemuatan hasil langsung di dalam webview.
+    
+    Kedua jenis di atas akan mengembalikan respons yang sama.<br/>
+    Saat jenis pertama digunakan dan metode `POST` mengembalikan HTTP 302, jangan ikuti pengalihan.
+    Silakan gunakan `GET /masuk` untuk mengetahui status dan pesan kesalahan.<br/>
+    <SecurityDefinitions /><br/>
+  version: v1
+  contact:
+    name: pengembang aplikasi
+    email: william@simera.web.id
+externalDocs:
+  description: Lihat panduan penggunaan situs
+  url: https://cara.simera.web.id/md/
+servers:
+  - url: https://localhost/kendali
+    description: Localhost
+  # - url: 
+  #   description: Staging
+  - url: https://maha.simera.web.id/kendali
+    description: Production
+paths:
+  /masuk:
+    $ref: 'publik.yaml#/paths/~1masuk'
+  /keluar:
+    $ref: 'privat-umum.yaml#/paths/~1keluar'
+  /pilih:
+    $ref: 'privat-umum.yaml#/paths/~1pilih'
+
+tags:
+  - name: publik
+    description: Dapat dipanggil tanpa perlu masuk ke sistem
+  - name: privat-umum
+    description: Dapat dipanggil setelah masuk ke sistem **tanpa perlu** memilih acara tertentu
+  - name: privat-spesifik
+    description: Dapat dipanggil setelah masuk ke sistem dan **setelah** memilih acara tertentu
+components:
+  securitySchemes:
+    token:
+      type: http
+      scheme: bearer
+      description: |
+        Otorisasi yang diperlukan untuk mengakses endpoint sebagai pengguna.<br/>
+        Gunakan `GET /masuk` untuk mendapatkan token pada balasan JSON.
+    cookie:
+      type: apiKey
+      in: cookie
+      name: PHPSESSID
+      description: |
+        Otorisasi yang diperlukan untuk mengakses endpoint sebagai pengguna.<br/>
+        Buka halaman utama untuk mendapatkan cookie sesuai header balasan `Set-Cookie`.
+  schemas:
+    Galat:
+      type: object
+      title: Galat
+      description: Bentuk paling sederhana dari galat
+      properties:
+        status:
+          type: string
+          enum:
+            - diakhiri
+            - dialihkan
+          description: |
+            Tindakan yang perlu dilakukan selanjutnya. Bisa berupa: 
+            diakhiri (proses tidak dilanjutkan), atau 
+            dialihkan (proses perlu dilanjutkan ke halaman lain).
+        jenis:
+          type: string
+          enum:
+            - galat
+            - peringatan
+            - info
+            - sukses
+          description: |
+            Jenis pesan yang perlu ditampilkan ke pengguna.
+            Bisa berupa salah satu dari 4 tingkatan:
+            galat, peringatan, info, dan sukses.
+        pesan:
+          type: string
+          description: Isi pesan yang perlu ditampilkan ke pengguna.
+        url:
+          type: string
+          description: |
+            Halaman yang perlu dibuka selanjutnya.
+            Properti ini hanya dikirimkan jika `status` bernilai `dialihkan`.
+  responses:
+    302:
+      description: ''
+      content:
+        plain/text:
+          example: ''
+  
+x-redoc:
+  schema:
+    type: API Sistem · © Simera
+  example:
+    description: |
+      Dokumentasi ini mungkin tidak ditampilkan secara benar dengan Redoc, karena kurangnya fitur yang digunakan di sini, seperti:
+      - [Schema Object rendering](https://github.com/Redocly/redoc/issues/134)
+        termasuk indikator saat beberapa operasi menggunakan objek model yang sama,
+      - [Response/Schema Object polymorphism](https://github.com/Redocly/redoc/issues/861)
+        termasuk komposisi dan penimpaan node anak secara rekursif, dan
+      - [Link Object rendering](https://github.com/Redocly/redoc/issues/437).
+
+      ***Silakan gunakan Swagger UI yang memiliki fitur*** **Try it,** ***bahkan di edisi komunitas.***<br/><br/>
+    value: []

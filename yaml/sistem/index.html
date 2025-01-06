@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+    <title>API Simera</title>
+    <link rel="icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../swagger-ui.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="sidenav-open" onclick="
+      document.getElementById('sidenav').hidden=false;
+      document.getElementById('main').style.marginLeft='260px';
+    ">
+      <svg width="20" height="20"><path fill="#fafafa" d="M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+    </div>
+
+    <div id="sidenav">
+      <div id="sidenav-close" style="float: right; margin: 5px 0" onclick="
+        document.getElementById('sidenav').hidden=true;
+        document.getElementById('main').style.marginLeft=0;
+      ">
+        <svg width="20" height="20"><use fill="#fafafa" href="#close" xlink:href="#close"/></svg>
+      </div>
+      <div id="toc">
+        <div class="heading">Informasi</div>
+        <div id="toc-info"></div>
+
+        <div class="heading">Operasi</div>
+        <div id="toc-ops"></div>
+  
+        <div class="heading">Skema</div>
+        <div id="toc-schemas"></div>
+      </div>
+      <form id="color" name="color">
+        Mode:<br/>
+        <label><input type="radio" name="color" id="auto" onclick="setPreferredColorScheme('auto')" checked />Otomatis</label>
+        <label><input type="radio" name="color" id="light" onclick="setPreferredColorScheme('light')"/>Terang</label>
+        <label><input type="radio" name="color" id="dark" onclick="setPreferredColorScheme('dark')" />Gelap</label>
+      </form>
+    </div>
+
+    <div id="main">
+      <div id="swagger-ui"></div>
+      <footer class="swagger-ui" style="display: none;">
+        <div class="wrapper">
+          Ditenagai oleh Swagger UI <a href="https://github.com/swagger-api/swagger-ui/releases" id="swagger-ui-ver"></a> &middot;
+          &copy; Simera
+        </div>
+      </footer>
+    </div>
+
+    <script src="../swagger-ui-bundle.js"></script>
+    <script>
+      let color = localStorage.getItem('prefers-color-scheme')
+      if(color) document.forms['color'][color].click();
+
+      function setPreferredColorScheme(mode) {
+        localStorage.setItem('prefers-color-scheme', mode);
+        for (var i=document.styleSheets[1].rules.length-1; i>=0; i--) {
+          rule = document.styleSheets[1].rules[i].media;
+          if (rule && rule.mediaText.includes("prefers-color-scheme")) {
+            if(mode=='light') rule.appendMedium("default-prefers-color-scheme");
+            if(mode=='dark')  rule.appendMedium("(prefers-color-scheme: light)");
+            if(mode!='light') rule.appendMedium("(prefers-color-scheme: dark)");
+
+            if(mode!='light' && rule.mediaText.includes("default")) rule.deleteMedium("default-prefers-color-scheme");
+            if(mode!='dark'  && rule.mediaText.includes("light"))   rule.deleteMedium("(prefers-color-scheme: light)");
+            if(mode=='light' && rule.mediaText.includes("dark"))    rule.deleteMedium("(prefers-color-scheme: dark)");
+            return;
+          }
+        }
+      }
+
+      function closesidenav() {
+        if(document.getElementById('sidenav-close').offsetWidth) document.getElementById('sidenav-close').click();
+      }
+      function generateTOC() {
+        // Information
+        for(let i of document.getElementsByClassName("information-container")[0].getElementsByTagName("h2")) {
+          if(i.className != "title" && !i.id) i.id = "info-"+i.innerText.replace(/ /g,"_");
+          a = document.createElement("a");
+          a.href = "#" + i.id;
+          a.onclick = closesidenav;
+          a.innerHTML = i.innerText.replace(" \nOAS3","");
+          document.getElementById("toc-info").appendChild(a);
+        }
+
+        // Operations
+        a = document.createElement("a");
+        a.innerHTML = "Memuat..."
+        document.getElementById("toc-ops").appendChild(a);
+        setTimeout(function() {
+          prevtag = "";
+          document.getElementById("toc-ops").innerHTML = "";
+
+          for(let i of document.getElementsByClassName("opblock")) {
+            tag = i.closest(".opblock-tag-section").querySelector("h3").id;
+            if (prevtag != tag) {
+              a = document.createElement("a");
+              a.classList.add("tag");
+              a.href = "#"+tag;
+              a.onclick = closesidenav;
+              a.innerHTML = tag.replace("operations-tag-","").replace(/_/g, " ").replace(/\\/g, "");
+              document.getElementById("toc-ops").appendChild(a);
+            }
+            prevtag = tag;
+
+            method = i.querySelector(".opblock-summary-method").innerText;
+            span1 = document.createElement("span");
+            span1.classList.add("method");
+            span1.classList.add("method-"+method.toLowerCase());
+            span1.innerHTML = method;
+
+            path = i.querySelector(".opblock-summary-path") || i.querySelector(".opblock-summary-path__deprecated");
+            pathUrl = path.querySelector("span").innerText;
+            // Fix Chrome behaviour where "overflow-wrap: break-word;" always breaking word without trying to break at nearest punctuation first.
+            if(window.chrome) pathUrl = pathUrl.replace(/\//g, "<wbr/>/").replace(/\./g, ".<wbr/>").replace(/^\<wbr\/\>/g,'');
+            span2 = document.createElement("span");
+            span2.classList.add("path");
+            span2.innerHTML = pathUrl;
+
+            a = document.createElement("a");
+            a.classList.add("ops");
+            if(i.classList.contains("opblock-deprecated")) a.classList.add("deprecated");
+            a.href = "#"+i.id;
+            a.onclick = closesidenav;
+            a.appendChild(span1);
+            a.appendChild(span2);
+            document.getElementById("toc-ops").appendChild(a);
+          }
+        }, 2500);
+
+        // Schemas
+        for(let i of document.getElementsByClassName("model-title")) {          
+          a = document.createElement("a");
+          a.href = "#" + i.closest(".model-container").id;
+          a.onclick = closesidenav;
+          a.innerHTML = i.innerText;
+          document.getElementById("toc-schemas").appendChild(a);
+          i.closest(".model-box-control").click();
+        }
+        setTimeout(function() {
+          for(let i of document.getElementsByClassName("prop-enum")) {
+            i.getElementsByClassName("model-box-control")[0].click();
+          }
+        }, 2500);
+      }
+
+      function gotoElement() {
+        var elemId = window.location.hash.replace("#","").replace("/", "").replace(/%5C/g,"\\");
+        setTimeout(function() {
+          elem = document.getElementById(elemId) || document.getElementsByName(elemId)[0];
+          if(elem) {
+            window.scrollTo({ top: elem.offsetTop, behavior: "smooth" });
+            history.pushState(null, null, "#" + elemId);
+          }
+        }, 2500);
+        closesidenav();
+      }
+
+      var u = new URLSearchParams(window.location.search).get('u') || "openapi.yaml";
+      // if(u && u.indexOf('://')==-1) u = "spec/"+u;
+
+      window.onload = function() {
+        const ui = SwaggerUIBundle({
+          dom_id: "#swagger-ui",
+          deepLinking: false,
+          filter: true,
+          defaultModelExpandDepth: 5,
+          defaultModelsExpandDepth: 5,
+          docExpansion: "full",
+          url: u,
+          onComplete: generateTOC
+        });
+        window.ui = ui;
+        
+        document.getElementById("swagger-ui-ver").innerHTML = "v" + versions.swaggerUi.version;
+        document.getElementsByTagName("footer")[0].removeAttribute("style");
+        gotoElement();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+---
+openapi: 3.0.3
+info:
+  title: ''
+  version: ''
+paths:
+  /keluar:
+    post:
+      tags:
+        - privat-umum
+      description: |
+        Keluar dari sistem.
+      security:
+        - token: []
+        - cookie: []
+      responses:
+        302:
+          $ref: 'openapi.yaml#/components/responses/302'
+      
+  /pilih:
+    get:
+      tags:
+        - privat-umum
+      description: |
+        Mendapatkan acara apa saja yang tersedia untuk pengguna.
+      security:
+        - token: []
+        - cookie: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              example: {
+                "grup": [
+                  {
+                    "id": 1,
+                    "nama": "(Simera)"
+                  },
+                  {
+                    "id": 3,
+                    "nama": "Tes"
+                  }
+                ],
+                "grup_acara": [
+                  {
+                    "id_grup": 1,
+                    "id_acara": [ 1, 2 ]
+                  },
+                  {
+                    "id_grup": 3,
+                    "id_acara": [ 2, 3 ]
+                  }
+                ],
+                "acara": [
+                  {
+                    "id": 3,
+                    "nama": "Tes Tempat Duplikat",
+                    "waktu_mulai": "2024-08-12 00:00:00",
+                    "waktu_akhir": "2024-08-12 23:59:00",
+                    "nama_tempat": "Antah-berantah",
+                    "waktu_acara": "Senin, 12 Agustus 2024  00:00&ndash;23:59"
+                  },
+                  {
+                    "id": 1,
+                    "nama": "Acara Uji Coba",
+                    "waktu_mulai": "2024-06-01 00:00:00",
+                    "waktu_akhir": "2024-12-31 22:05:00",
+                    "nama_tempat": "Lorem",
+                    "waktu_acara": "1 Jun&ndash;31 Des 2024"
+                  },
+                  {
+                    "id": 2,
+                    "nama": "Acara Lorem Ipsum Dolor Sit Amet",
+                    "waktu_mulai": "2024-05-16 00:00:00",
+                    "waktu_akhir": "2024-05-16 23:59:00",
+                    "nama_tempat": "Ipsum",
+                    "waktu_acara": "Kamis, 16 Mei 2024  00:00&ndash;23:59"
+                  }
+                ],
+                "tanggal": "2025-01-07"
+              }
+      
+    post:
+      tags:
+        - privat-umum
+      description: |
+        Memilih salah satu acara untuk dibuka.
+      security:
+        - token: []
+        - cookie: []
+      requestBody:
+        content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    description: ID acara.
+      responses:
+        302:
+          $ref: 'openapi.yaml#/components/responses/302'
