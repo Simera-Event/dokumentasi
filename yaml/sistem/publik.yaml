@@ -9,11 +9,22 @@ paths:
       tags:
         - publik
       description: |
-        Mendapatkan token untuk masuk ke dalam sistem (jika belum masuk ke sistem).<br/>
-        Mendapatkan informasi sesi, seperti hak akses dan acara terpilih (jika sudah masuk ke sistem).
+        Jika token tak diberikan, mendapatkan token baru untuk masuk ke dalam sistem.<br/>
+        Jika token diberikan, mendapatkan rincian sesi, seperti hak akses dan acara terpilih.
+      security:
+        - token: []
+        - cookie: []
       responses:
         200:
-          description: ''
+          description: Sukses mendapatkan token baru.
+          content:
+            application/json:
+              example: {
+                "token": "qwer24k6lm8asdfghj02xcvbnm",
+                "sesi": {}
+              }
+        200 (a):
+          description: Sukses mendapatkan rincian sesi menurut token.
           content:
             application/json:
               example: {
@@ -35,6 +46,11 @@ paths:
                   "gaya": "bahari_hijau"
                 }
               }
+        401:
+          description: Token tidak sah.
+          content:
+            text/html:
+              example: 'WWW-Authenticate: Bearer'
       
     post:
       tags:
@@ -62,4 +78,74 @@ paths:
                     description: Hasil pindai kode QR atau NFC kartu akses.
       responses:
         302:
-          $ref: 'openapi.yaml#/components/responses/302'
+          $ref: openapi.yaml#/components/responses/302
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "dialihkan",
+                    "jenis": "galat",
+                    "pesan": "Akun Anda diblokir, silakan hubungi pengurus",
+                    "url": "/masuk"
+                  }
+  
+  /bahasa:
+    get:
+      tags:
+        - publik
+      description: |
+        Mendapatkan daftar bahasa, dan bahasa terpilih berikut daftar terjemahannya.
+      security:
+        - token: []
+        - cookie: []
+      responses:
+        200:
+          description: Sukses.
+          content:
+            application/json:
+              example: {
+                "pilihan": [
+                  [ "en", "English" ],
+                  [ "id", "Bahasa Indonesia" ]
+                ],
+                "bahasa": "id",
+                "terjemahan": {
+                  "nama_bahasa": "Bahasa Indonesia",
+                  "bahasa": "Bahasa",
+                  "pemisah_label": ": ",
+                  "pemisah_butir": ", ",
+                  "pemisah_ribuan": ".",
+                  "pemisah_desimal": ",",
+                  "tanda_persen": "%",
+                  "tanda_kosong": "-",
+                  "validasi_semua_bidang": "Semua bidang",
+                  "validasi_diisi": "{0} harus diisi",
+                  "validasi_opsi": "{0} harus dipilih",
+                  "validasi_angka": "{0} harus berupa angka",
+                  "validasi_bulat_positif": "{0} harus berupa bilangan bulat positif",
+                  "validasi_tanggal": "{0} harus berupa tanggal yang benar",
+                  "validasi_surel": "{0} harus berupa alamat yang benar",
+                }
+              }
+    post:
+      tags:
+        - publik
+      description: |
+        Mengganti bahasa terpilih.
+      security:
+        - token: []
+        - cookie: []
+      requestBody:
+        content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  kode:
+                    type: string
+                    description: Kode bahasa.
+      responses:
+        302:
+          $ref: openapi.yaml#/components/responses/302

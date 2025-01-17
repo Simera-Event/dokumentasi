@@ -10,13 +10,18 @@ info:
     <SchemaDefinition schemaRef="#/x-redoc/schema" exampleRef="#/x-redoc/example" />
 
     ## Otorisasi
-    Ada dua jenis otorisasi yang dapat digunakan, gunakanlah sesuai kebutuhan:
-    1. Dikirimkan sebagai `Authorization` dalam Header HTTP dengan skema Bearer. Cocok untuk pemanggilan API standar.
-    1. Dikirimkan sebagai `PHPSESSID` dalam Cookie. Cocok untuk pemuatan hasil langsung di dalam webview.
+    Ada dua jenis otorisasi yang dapat digunakan:
+    1. Dikirimkan sebagai `Authorization` dalam Header HTTP dengan skema Bearer.
+       Saat belum terotorisasi, akan mengembalikan HTTP 401.
+       Cocok untuk pemanggilan API standar.
+    1. Dikirimkan sebagai `PHPSESSID` dalam Cookie.
+       Saat belum terotorisasi, akan mengalihkan ke laman masuk via header Location.
+       Cocok untuk pemuatan hasil langsung di dalam webview.
     
     Kedua jenis di atas akan mengembalikan respons yang sama.<br/>
-    Saat jenis pertama digunakan dan metode `POST` mengembalikan HTTP 302, jangan ikuti pengalihan.
-    Silakan gunakan `GET /masuk` untuk mengetahui status dan pesan kesalahan.<br/>
+    Catatan: Metode `POST` dapat mengembalikan HTTP 302.
+    Saat menggunakan jenis pertama, jangan ikuti pengalihan, tapi
+    panggil `GET /masuk` untuk mendapatkan pesan dan statusnya.<br/>
     <SecurityDefinitions /><br/>
   version: v1
   contact:
@@ -28,17 +33,19 @@ externalDocs:
 servers:
   - url: https://localhost/kendali
     description: Localhost
-  # - url: 
-  #   description: Staging
+  - url: https://coba.simera.web.id/kendali
+    description: Staging
   - url: https://maha.simera.web.id/kendali
     description: Production
 paths:
   /masuk:
-    $ref: 'publik.yaml#/paths/~1masuk'
+    $ref: publik.yaml#/paths/~1masuk
+  /bahasa:
+    $ref: publik.yaml#/paths/~1bahasa
   /keluar:
-    $ref: 'privat-umum.yaml#/paths/~1keluar'
+    $ref: privat-umum.yaml#/paths/~1keluar
   /pilih:
-    $ref: 'privat-umum.yaml#/paths/~1pilih'
+    $ref: privat-umum.yaml#/paths/~1pilih
 
 tags:
   - name: publik
@@ -75,8 +82,8 @@ components:
             - dialihkan
           description: |
             Tindakan yang perlu dilakukan selanjutnya. Bisa berupa: 
-            diakhiri (proses tidak dilanjutkan), atau 
-            dialihkan (proses perlu dilanjutkan ke halaman lain).
+            `diakhiri` (proses tidak dilanjutkan), atau 
+            `dialihkan` (proses perlu dilanjutkan ke halaman lain).
         jenis:
           type: string
           enum:
@@ -87,7 +94,7 @@ components:
           description: |
             Jenis pesan yang perlu ditampilkan ke pengguna.
             Bisa berupa salah satu dari 4 tingkatan:
-            galat, peringatan, info, dan sukses.
+            `galat`, `peringatan`, `info`, dan `sukses`.
         pesan:
           type: string
           description: Isi pesan yang perlu ditampilkan ke pengguna.
@@ -98,14 +105,19 @@ components:
             Properti ini hanya dikirimkan jika `status` bernilai `dialihkan`.
   responses:
     302:
-      description: ''
+      description: Ditemukan, permintaan diproses. Periksa rincian sesi.
       content:
-        plain/text:
-          example: ''
+        text/html:
+          example: 'Location: /url'
+    422:
+      description: Entitas tidak dapat diproses.
+      content:
+        application/json:
+          example: {}
   
 x-redoc:
   schema:
-    type: API Sistem · © Simera
+    type: Dokumentasi API Simera · Ditenagai oleh Redoc · © William Surya P
   example:
     description: |
       Dokumentasi ini mungkin tidak ditampilkan secara benar dengan Redoc, karena kurangnya fitur yang digunakan di sini, seperti:

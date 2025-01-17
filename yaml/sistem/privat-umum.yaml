@@ -15,43 +15,23 @@ paths:
         - cookie: []
       responses:
         302:
-          $ref: 'openapi.yaml#/components/responses/302'
+          $ref: openapi.yaml#/components/responses/302
       
   /pilih:
     get:
       tags:
         - privat-umum
       description: |
-        Mendapatkan acara apa saja yang tersedia untuk pengguna.
+        Mendapatkan daftar acara untuk dipilih, berikut daftar penyelenggara (`grup`) untuk memfilter acara.
       security:
         - token: []
         - cookie: []
       responses:
         200:
-          description: ''
+          description: Sukses
           content:
             application/json:
               example: {
-                "grup": [
-                  {
-                    "id": 1,
-                    "nama": "(Simera)"
-                  },
-                  {
-                    "id": 3,
-                    "nama": "Tes"
-                  }
-                ],
-                "grup_acara": [
-                  {
-                    "id_grup": 1,
-                    "id_acara": [ 1, 2 ]
-                  },
-                  {
-                    "id_grup": 3,
-                    "id_acara": [ 2, 3 ]
-                  }
-                ],
                 "acara": [
                   {
                     "id": 3,
@@ -78,8 +58,39 @@ paths:
                     "waktu_acara": "Kamis, 16 Mei 2024  00:00&ndash;23:59"
                   }
                 ],
+                "grup": [
+                  {
+                    "id": 1,
+                    "nama": "(Simera)"
+                  },
+                  {
+                    "id": 3,
+                    "nama": "Tes"
+                  }
+                ],
+                "grup_acara": [
+                  {
+                    "id_grup": 1,
+                    "id_acara": [ 1, 2 ]
+                  },
+                  {
+                    "id_grup": 3,
+                    "id_acara": [ 2, 3 ]
+                  }
+                ],
                 "tanggal": "2025-01-07"
               }
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "dialihkan",
+                    "jenis": "galat",
+                    "pesan": "Silakan masuk ke sistem terlebih dahulu",
+                    "url": "/masuk"
+                  }
       
     post:
       tags:
@@ -100,4 +111,15 @@ paths:
                     description: ID acara.
       responses:
         302:
-          $ref: 'openapi.yaml#/components/responses/302'
+          $ref: openapi.yaml#/components/responses/302
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "dialihkan",
+                    "jenis": "galat",
+                    "pesan": "Acara yang dipilih tidak tersedia",
+                    "url": "/pilih"
+                  }
