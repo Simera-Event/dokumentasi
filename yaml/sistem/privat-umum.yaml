@@ -22,7 +22,7 @@ paths:
       tags:
         - privat-umum
       description: |
-        Mendapatkan daftar acara untuk dipilih, berikut daftar penyelenggara (`grup`) untuk memfilter acara.
+        Mendapatkan daftar acara untuk dipilih, berikut daftar penyelenggara untuk memfilter acara.
       security:
         - token: []
         - cookie: []

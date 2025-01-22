@@ -5,6 +5,18 @@ info:
   description: |
     Pengelolaan acara yang ada di Simera dari sisi belakang, seperti kode penukaran dan kode pintu;
     serta pengambilan laporan dan pengubahan pengaturan dari suatu acara.
+    
+    ## Glosarium
+    Seiring dengan pengembangan sistem, beberapa istilah telah disesuaikan pada
+    tampilan antarmuka pengguna tanpa mengubah nama variabel pada kode maupun
+    nama tabel dan kolom pada basisdata. Berikut adalah beberapa di antaranya:
+    
+    | Nama pada kode | Nama pada tampilan<br>(bahasa Indonesia) | Nama pada tampilan<br>(English) | Penjelasan |
+    | --- | --- | --- | --- |
+    | voucer | Kode penukaran | Redemption code | Kode yang diterbitkan oleh masing-masing penyalur untuk ditukarkan dengan kode pintu. |
+    | tiket  | Kode pintu | Gate code | Kode yang diterbitkan oleh penyelenggara atau Simera untuk masuk ke (atau keluar dari) dalam acara. |
+    | grup   | Penyelenggara | Organizer | Rekan usaha yang mengadakan suatu acara, misal: iMe, Northstar Entertainment, Seraya Production, dsb. |
+    | mitra  | Penyalur | Supplier | Rekan usaha yang menjual "tiket" suatu acara, misal: Loket, Raja Karcis, Dewa Tiket, dsb. |
 
     ## <!-- Catatan untuk pengguna Redoc -->
     <SchemaDefinition schemaRef="#/x-redoc/schema" exampleRef="#/x-redoc/example" />
@@ -46,13 +58,15 @@ paths:
     $ref: privat-umum.yaml#/paths/~1keluar
   /pilih:
     $ref: privat-umum.yaml#/paths/~1pilih
+  /periksa:
+    $ref: privat-acara.yaml#/paths/~1periksa
 
 tags:
   - name: publik
     description: Dapat dipanggil tanpa perlu masuk ke sistem
   - name: privat-umum
     description: Dapat dipanggil setelah masuk ke sistem **tanpa perlu** memilih acara tertentu
-  - name: privat-spesifik
+  - name: privat-acara
     description: Dapat dipanggil setelah masuk ke sistem dan **setelah** memilih acara tertentu
 components:
   securitySchemes:

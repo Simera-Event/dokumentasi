@@ -1,0 +1,56 @@
+---
+openapi: 3.0.3
+info:
+  title: ''
+  version: ''
+paths:
+  /periksa:
+    get:
+      tags:
+        - privat-acara
+      description: |
+        Mendapatkan rincian dari suatu kode pintu. `null` akan dikembalikan jika kode pintu tidak ditemukan.
+      security:
+        - token: []
+        - cookie: []
+      parameters:
+        - name: kode
+          description: Kode pintu.
+          in: query
+          schema:
+            type: string
+      responses:
+        200:
+          description: Sukses
+          content:
+            application/json:
+              example: {
+                "tiket": {
+                  "id": 53107,
+                  "kode": "9068158201220",
+                  "dicetak": "0000-00-00 00:00:00",
+                  "dijual": "2023-05-30 15:36:21",
+                  "status": "aktif",
+                  "nomor_kursi": "A-01",
+                  "masuk_pertama": "0000-00-00 00:00:00",
+                  "keluar_terakhir": "0000-00-00 00:00:00",
+                  "jumlah_pakai": 0,
+                  "nama_pembeli": "Budi",
+                  "identitas_pembeli": "A12345",
+                  "catatan_pembeli": "Dikuasakan ke Ani",
+                  "lampiran": "2023-05-30 15.36.21.600.png",
+                  "status_kategori": "aktif",
+                  "nama_kategori": "Tes"
+                }
+              }
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "diakhiri",
+                    "jenis": "galat",
+                    "pesan": "Kode pintu harus diisi",
+                    "url": ""
+                  }
