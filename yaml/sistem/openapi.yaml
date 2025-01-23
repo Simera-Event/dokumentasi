@@ -14,9 +14,9 @@ info:
     | Nama pada kode | Nama pada tampilan<br>(bahasa Indonesia) | Nama pada tampilan<br>(English) | Penjelasan |
     | --- | --- | --- | --- |
     | voucer | Kode penukaran | Redemption code | Kode yang diterbitkan oleh masing-masing penyalur untuk ditukarkan dengan kode pintu. |
-    | tiket  | Kode pintu | Gate code | Kode yang diterbitkan oleh penyelenggara atau Simera untuk masuk ke (atau keluar dari) dalam acara. |
-    | grup   | Penyelenggara | Organizer | Rekan usaha yang mengadakan suatu acara, misal: iMe, Northstar Entertainment, Seraya Production, dsb. |
-    | mitra  | Penyalur | Supplier | Rekan usaha yang menjual "tiket" suatu acara, misal: Loket, Raja Karcis, Dewa Tiket, dsb. |
+    | tiket  | Kode pintu     | Gate code       | Kode yang diterbitkan oleh penyelenggara atau Simera untuk masuk ke (atau keluar dari) dalam acara. |
+    | grup   | Penyelenggara  | Organizer       | Rekan usaha yang mengadakan suatu acara, misal: iMe, Northstar Entertainment, Seraya Production, dsb. |
+    | mitra  | Penyalur       | Distributor     | Rekan usaha yang menjual "tiket" suatu acara, misal: Loket, Raja Karcis, Dewa Tiket, dsb. |
 
     ## <!-- Catatan untuk pengguna Redoc -->
     <SchemaDefinition schemaRef="#/x-redoc/schema" exampleRef="#/x-redoc/example" />
