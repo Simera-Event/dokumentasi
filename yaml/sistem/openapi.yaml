@@ -60,6 +60,10 @@ paths:
     $ref: privat-umum.yaml#/paths/~1pilih
   /periksa:
     $ref: privat-acara.yaml#/paths/~1periksa
+  /pakai_masuk:
+    $ref: privat-acara.yaml#/paths/~1pakai_masuk
+  /pakai_keluar:
+    $ref: privat-acara.yaml#/paths/~1pakai_keluar
 
 tags:
   - name: publik

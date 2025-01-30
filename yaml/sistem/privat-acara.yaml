@@ -38,10 +38,11 @@ paths:
                   "nama_pembeli": "Budi",
                   "identitas_pembeli": "A12345",
                   "catatan_pembeli": "Dikuasakan ke Ani",
-                  "lampiran": "2023-05-30 15.36.21.600.png",
-                  "status_kategori": "aktif",
-                  "nama_kategori": "Tes"
-                }
+                  "lampiran": "2023-05-30 15.36.21.600.jpg|2023-05-30 15.36.21.830.jpg",
+                  "nama_kategori": "Tes",
+                  "status_kategori": "aktif"
+                },
+                "jalur_lampiran": "https://maha.simera.web.id/unggahan/voucer/",
               }
         422:
           allOf:
@@ -53,4 +54,154 @@ paths:
                     "jenis": "galat",
                     "pesan": "Kode pintu harus diisi",
                     "url": ""
+                  }
+  
+  /pakai_masuk:
+    get:
+      tags:
+        - privat-acara
+      description: |
+        Mendapatkan pilihan kategori yang tersedia untuk acara terpilih,
+        serta riwayat pakai masuk kode pintu dari pengguna saat ini.
+      security:
+        - token: []
+        - cookie: []
+      responses:
+        200:
+          description: Sukses
+          content:
+            application/json:
+              example: {
+                "mode": "kita",
+                "riwayat": [
+                  {
+                    "status": "berhasil",
+                    "pesan": "Berhasil dipakai masuk",
+                    "rincian": {
+                      "id": 1562,
+                      "kode": "1067908742011",
+                      "dijual": "2024-12-29 16:11:45",
+                      "status": "aktif",
+                      "nomor_kursi": "",
+                      "masuk_pertama": "2024-12-29 16:11:45",
+                      "keluar_terakhir": "0000-00-00 00:00:00",
+                      "jumlah_pakai": 1,
+                      "nama_pembeli": "Sistem",
+                      "identitas_pembeli": "Tidak tersedia",
+                      "catatan_pembeli": "Dibeli secara otomatis saat pakai masuk",
+                      "id_kategori": 3,
+                      "nama_kategori": "Tes banyak",
+                      "status_kategori": "aktif",
+                      "waktu": "2024-12-29 16:11:45",
+                      "dijual2": "2024-12-29 16:11:45"
+                    }
+                  },
+                  {
+                    "status": "berhasil",
+                    "pesan": "Berhasil dipakai masuk",
+                    "rincian": {
+                      "id": 336,
+                      "kode": "1065317675814",
+                      "dijual": "2024-12-29 16:11:38",
+                      "status": "aktif",
+                      "nomor_kursi": "",
+                      "masuk_pertama": "2024-12-29 16:11:38",
+                      "keluar_terakhir": "0000-00-00 00:00:00",
+                      "jumlah_pakai": 1,
+                      "nama_pembeli": "Sistem",
+                      "identitas_pembeli": "Tidak tersedia",
+                      "catatan_pembeli": "Dibeli secara otomatis saat pakai masuk",
+                      "id_kategori": 3,
+                      "nama_kategori": "Tes banyak",
+                      "status_kategori": "aktif",
+                      "waktu": "2024-12-29 16:11:38",
+                      "dijual2": "2024-12-29 16:11:38"
+                    }
+                  }
+                ],
+                "kategori": [
+                  {
+                    "id": 1,
+                    "nama": "Tes"
+                  },
+                  {
+                    "id": 3,
+                    "nama": "Tes banyak"
+                  }
+                ]
+              }
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "dialihkan",
+                    "jenis": "galat",
+                    "pesan": "Silakan masuk ke sistem terlebih dahulu",
+                    "url": "/masuk"
+                  }
+  
+  /pakai_keluar:
+    get:
+      tags:
+        - privat-acara
+      description: |
+        Mendapatkan pilihan kategori yang tersedia untuk acara terpilih,
+        serta riwayat pakai keluar kode pintu dari pengguna saat ini.
+      security:
+        - token: []
+        - cookie: []
+      responses:
+        200:
+          description: Sukses
+          content:
+            application/json:
+              example: {
+                "mode": "kita",
+                "riwayat": [
+                  {
+                    "status": "berhasil",
+                    "pesan": "Berhasil dipakai keluar",
+                    "rincian": {
+                      "id": 16,
+                      "kode": "6897853640064",
+                      "dijual": "2023-04-25 15:32:37",
+                      "status": "aktif",
+                      "nomor_kursi": "",
+                      "masuk_pertama": "2023-05-05 00:39:20",
+                      "keluar_terakhir": "2023-05-05 11:14:18",
+                      "jumlah_pakai": 1,
+                      "nama_pembeli": "aaa",
+                      "identitas_pembeli": "bbb",
+                      "catatan_pembeli": "ccc",
+                      "id_kategori": 1,
+                      "nama_kategori": "Tes",
+                      "status_kategori": "aktif",
+                      "waktu": "2023-05-05 11:14:18",
+                      "masuk_pertama2": "2023-05-05 00:39:20"
+                    }
+                  }
+                ],
+                "kategori": [
+                  {
+                    "id": 1,
+                    "nama": "Tes"
+                  },
+                  {
+                    "id": 3,
+                    "nama": "Tes banyak"
+                  }
+                ]
+              }
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "dialihkan",
+                    "jenis": "galat",
+                    "pesan": "Silakan masuk ke sistem terlebih dahulu",
+                    "url": "/masuk"
                   }
