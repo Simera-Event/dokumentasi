@@ -141,6 +141,92 @@ paths:
                     "pesan": "Silakan masuk ke sistem terlebih dahulu",
                     "url": "/masuk"
                   }
+    post:
+      tags:
+        - privat-acara
+      description: |
+        Menetapkan kode pintu untuk dipakai masuk.
+      security:
+        - token: []
+        - cookie: []
+      requestBody:
+        content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  id_acara:
+                    type: number
+                    description: ID dari acara terpilih.
+                  kategori[]:
+                    type: array
+                    description: Daftar ID dari kategori yang diperbolehkan kode pintunya untuk dipakai masuk.
+                  kode:
+                    type: string
+                    description: Kode pintu untuk dipakai masuk.
+              encoding:
+                kategori[]:
+                  style: form
+                  explode: true
+      responses:
+        200:
+          description: Sukses memeriksa, dan kode pintu ditemukan. Periksa `status` untuk mengetahui pakai masuk `berhasil` atau `gagal`.
+          content:
+            application/json:
+              example: {
+                "status": "berhasil",
+                "pesan": "Berhasil dipakai masuk",
+                "rincian": {
+                  "id": 1562,
+                  "kode": "1067908742011",
+                  "dijual": "2024-12-29 16:11:45",
+                  "status": "aktif",
+                  "nomor_kursi": "",
+                  "masuk_pertama": "2024-12-29 16:11:45",
+                  "keluar_terakhir": "2025-01-30 22:34:55",
+                  "jumlah_pakai": 1,
+                  "nama_pembeli": "Sistem",
+                  "identitas_pembeli": "Tidak tersedia",
+                  "catatan_pembeli": "Dibeli secara otomatis saat pakai masuk",
+                  "id_kategori": 3,
+                  "nama_kategori": "Tes banyak",
+                  "status_kategori": "aktif",
+                  "waktu": "22:38:09",
+                  "dijual2": "2024-12-29 16:11:45"
+                }
+              }
+        200 (a):
+          description: Sukses memeriksa, namun kode pintu tidak ditemukan. Pakai masuk gagal.
+          content:
+            application/json:
+              example: {
+                "status": "gagal",
+                "pesan": "Kode tidak ditemukan",
+                "rincian": {
+                  "id": 0,
+                  "kode": "1234567890128",
+                  "dijual": "0000-00-00 00:00:00",
+                  "nomor_kursi": "",
+                  "jumlah_pakai": -1,
+                  "nama_pembeli": "-",
+                  "identitas_pembeli": "",
+                  "catatan_pembeli": "",
+                  "id_kategori": 0,
+                  "nama_kategori": "-",
+                  "waktu": "22:27:02",
+                  "dijual2": "Tidak pernah"
+                }
+              }
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "dialihkan",
+                    "pesan": "Anda tidak memiliki akses ke menu ini",
+                    "url": "/pilih"
+                  }
   
   /pakai_keluar:
     get:
@@ -204,4 +290,91 @@ paths:
                     "jenis": "galat",
                     "pesan": "Silakan masuk ke sistem terlebih dahulu",
                     "url": "/masuk"
+                  }
+    post:
+      tags:
+        - privat-acara
+      description: |
+        Menetapkan kode pintu untuk dipakai keluar.
+      security:
+        - token: []
+        - cookie: []
+      requestBody:
+        content:
+            application/x-www-form-urlencoded:
+              schema:
+                type: object
+                properties:
+                  id_acara:
+                    type: number
+                    description: ID dari acara terpilih.
+                  kategori[]:
+                    type: array
+                    description: Daftar ID dari kategori yang diperbolehkan kode pintunya untuk dipakai keluar.
+                  kode:
+                    type: string
+                    description: Kode pintu untuk dipakai keluar.
+              encoding:
+                kategori[]:
+                  style: form
+                  explode: true
+      responses:
+        200:
+          description: Sukses memeriksa, dan kode pintu ditemukan. Periksa `status` untuk mengetahui pakai keluar `berhasil` atau `gagal`.
+          content:
+            application/json:
+              example: {
+                "status": "gagal",
+                "pesan": "Sudah dipakai keluar pada 22:47",
+                "rincian": {
+                  "id": 1562,
+                  "kode": "1067908742011",
+                  "dijual": "2024-12-29 16:11:45",
+                  "status": "aktif",
+                  "nomor_kursi": "",
+                  "masuk_pertama": "2024-12-29 16:11:45",
+                  "keluar_terakhir": "2025-01-30 22:47:31",
+                  "jumlah_pakai": 2,
+                  "nama_pembeli": "Sistem",
+                  "identitas_pembeli": "Tidak tersedia",
+                  "catatan_pembeli": "Dibeli secara otomatis saat pakai masuk",
+                  "id_kategori": 3,
+                  "nama_kategori": "Tes banyak",
+                  "status_kategori": "aktif",
+                  "waktu": "23:47:21",
+                  "masuk_pertama2": "2024-12-29 16:11:45"
+                }
+              }
+        200 (a):
+          description: Sukses memeriksa, namun kode pintu tidak ditemukan. Pakai keluar gagal.
+          content:
+            application/json:
+              example: {
+                "status": "gagal",
+                "pesan": "Kode tidak ditemukan",
+                "rincian": {
+                  "id": 0,
+                  "kode": "1",
+                  "dijual": "0000-00-00 00:00:00",
+                  "nomor_kursi": "",
+                  "jumlah_pakai": 0,
+                  "nama_pembeli": "-",
+                  "identitas_pembeli": "",
+                  "catatan_pembeli": "",
+                  "id_kategori": 0,
+                  "nama_kategori": "-",
+                  "waktu": "23:42:55",
+                  "masuk_pertama": "0000-00-00 00:00:00",
+                  "masuk_pertama2": "Tidak pernah"
+                }
+              }
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "dialihkan",
+                    "pesan": "Anda tidak memiliki akses ke menu ini",
+                    "url": "/pilih"
                   }
