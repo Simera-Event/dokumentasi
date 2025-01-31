@@ -4,4 +4,5 @@ Repositori kode sumber untuk situs dokumentasi dari Simera di https://cara.simer
 
 ## Cara menjalankan
 
-1. Gunakan markdown viewer
+1. Direktori md: Gunakan markdown viewer
+1. Direktori yaml: Gunakan Swagger UI (tersedia di dalam dengan nama "index.html"). Redoc tidak direkomendasikan.
