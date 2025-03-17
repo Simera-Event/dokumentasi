@@ -64,6 +64,8 @@ paths:
     $ref: privat-acara.yaml#/paths/~1pakai_masuk
   /pakai_keluar:
     $ref: privat-acara.yaml#/paths/~1pakai_keluar
+  /sinkron:
+    $ref: privat-acara.yaml#/paths/~1sinkron
 
 tags:
   - name: publik

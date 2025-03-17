@@ -156,10 +156,12 @@ paths:
                 type: object
                 properties:
                   id_acara:
-                    type: number
+                    type: integer
                     description: ID dari acara terpilih.
                   kategori[]:
                     type: array
+                    items:
+                      type: integer
                     description: Daftar ID dari kategori yang diperbolehkan kode pintunya untuk dipakai masuk.
                   kode:
                     type: string
@@ -306,10 +308,12 @@ paths:
                 type: object
                 properties:
                   id_acara:
-                    type: number
+                    type: integer
                     description: ID dari acara terpilih.
                   kategori[]:
                     type: array
+                    items:
+                      type: integer
                     description: Daftar ID dari kategori yang diperbolehkan kode pintunya untuk dipakai keluar.
                   kode:
                     type: string
@@ -377,4 +381,80 @@ paths:
                     "status": "dialihkan",
                     "pesan": "Anda tidak memiliki akses ke menu ini",
                     "url": "/pilih"
+                  }
+                  
+  /sinkron:
+    get:
+      tags:
+        - privat-acara
+      description: |
+        Mendapatkan berkas pencadangan berisi rincian acara berikut kategorinya, serta daftar dari kode penukaran, kode pintu, dan pesanan untuk keperluan sinkronisasi data.
+      security:
+        - token: []
+        - cookie: []
+      parameters:
+        - name: untuk
+          description: Penerima berkas pencadangan. Isi dengan `sistem` untuk sistem lokal, atau `seluler` untuk aplikasi seluler.
+          in: query
+          required: true
+          schema:
+            type: string
+            enum:
+              - sistem
+              - seluler
+        - name: isi[]
+          description: |
+            Daftar isi yang ingin dicadangkan. Bisa lebih dari satu.
+            - `voucer`: Kode penukaran
+            - `tiket`: Kode pintu
+            - `pesanan`: Pesanan dan rincian pesanan
+            
+            Acara, tempat, dan kategori akan selalu dicadangkan.
+            Jika `untuk` bernilai `sistem`, konten, penyelenggara, dan penyalur juga akan ikut dicadangkan.
+          in: query
+          schema:
+            type: array
+            items:
+              type: string
+              enum:
+                - voucer
+                - tiket
+                - pesanan
+      responses:
+        200:
+          description: Sukses
+          content:
+            application/octet-stream:
+              example: {
+                "sinkronisasi": {
+                  "perangkat": "Generic-PC",
+                  "pengguna": "ADMINIST2303",
+                  "waktu": "2025-03-17 20:42:58"
+                },
+                "acara": {
+                  "id": 4,
+                  "nama": "Tes Penjualan",
+                  "waktu_mulai": "2024-08-02 00:00:00",
+                  "waktu_akhir": "2024-08-02 23:59:00",
+                  "nama_tempat": "Gelora Bung Karno (GBK), Stadion Madya"
+                },
+                "kategori": [
+                  {
+                    "id": 11,
+                    "nama": "Istimewa",
+                    "status": "aktif"
+                  }
+                ],
+                "tiket": "eJydkM1OwzAQhF/F8rmx1o6LS868AdwQipbEqFvHSeSfE+LdcS2EKDQHKu3BnrFm1t/zO6eRd+pg7ozecbeMlnccQAoljZBaC2g13/GRBpvQVQ+gqcMAujrVP2WcNu2YMOVYbHSJ3oowL34JvcshUlGL4DFm1682JPS4mePslDH0yQZ0Rwqb707ZT3jsV3RY8qH0ldSS7l/t9FVIo50TJYyX8oBlVZwvxQn9SgHn8+1j9wPZ/huZ1EaAMULpgwB1/x9kCpRupGwUMKW6fdtBexOy6zm3IZN/kD1STNZvgHuiER0rHdGOhFcxPtD5wKIdMCBb0uIxUWQRMbFayup/ftN++QRyNsNw"
+              }
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "diakhiri",
+                    "jenis": "galat",
+                    "pesan": "Untuk harus diisi",
+                    "url": ""
                   }

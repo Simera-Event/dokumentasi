@@ -107,7 +107,7 @@ paths:
                 type: object
                 properties:
                   id:
-                    type: number
+                    type: integer
                     description: ID acara.
       responses:
         302:
