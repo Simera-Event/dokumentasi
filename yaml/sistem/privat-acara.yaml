@@ -458,3 +458,78 @@ paths:
                     "pesan": "Untuk harus diisi",
                     "url": ""
                   }
+    post:
+      tags:
+        - privat-acara
+      description: |
+        Menetapkan kode pintu untuk dipakai masuk atau dipakai keluar sesuai dengan berkas pencadangan untuk keperluan sinkronisasi data.
+      security:
+        - token: []
+        - cookie: []
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                dari:
+                  description: Pengirim berkas pencadangan. Isi dengan `sistem` untuk sistem daring dan lokal, atau `seluler` untuk aplikasi seluler.
+                  type: string
+                  enum:
+                    - sistem
+                    - seluler
+                berkas:
+                  description: |
+                    Berkas pencadangan untuk diunggah.
+                    
+                    Berkas yang dapat diterima dari sistem daring dan lokal adalah GZ.<br/>
+                    Berkas yang dapat diterima dari aplikasi seluler adalah JSON,
+                    yang memuat objek `pakai_masuk`, `pakai_keluar`, atau `tukar`.
+                    Mereka sendiri berupa objek yang memuat `data` berupa array
+                    (berisi array dari waktu pada indeks 0 dan kode pada indeks 1)
+                    dan juga `hash` dari data sebelumnya berupa teks.
+                    Untuk lebih jelasnya, perhatikan contoh berikut ini:
+                    ```json
+                    {
+                      "sinkronisasi": {
+                        "perangkat": "Pixel 7",
+                        "pengguna": "ADMINIST2303",
+                        "waktu": "2025-06-04 09:18:41"
+                      },
+                      "acara": {
+                        "id": 4,
+                        "nama": "Tes Penjualan",
+                        "waktu_mulai": "2024-08-02 00:00:00",
+                        "waktu_akhir": "2024-08-02 23:59:00",
+                        "nama_tempat": "Gelora Bung Karno (GBK), Stadion Madya"
+                      },
+                      "pakai_masuk": {
+                        "data": [
+                          ["2025-06-03 23:12:54", "147.077.248.029"]
+                        ],
+                        "hash": "470abee0da2e12f81ad456f6f13757359b1033a2"
+                      }
+                    }
+                    ```
+                  type: file
+              required:
+                - dari
+      responses:
+        200:
+          description: Sukses
+          content:
+            application/octet-stream:
+              example: |
+                » Pakai masuk
+                147.077.248.029: Berhasil dipakai masuk
+        422:
+          allOf:
+            - $ref: openapi.yaml#/components/responses/422
+            - content:
+                application/json:
+                  example: {
+                    "status": "dialihkan",
+                    "jenis": "galat",
+                    "pesan": "Gagal memproses berkas pencadangan. Berkas mungkin rusak.",
+                    "url": "/sinkron"
+                  }
