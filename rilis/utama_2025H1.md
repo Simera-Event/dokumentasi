@@ -28,8 +28,8 @@
 
 **Peningkatan fitur:**
 1. Bisa atur maksimum per pesanan di batas penjualan
-Per acara, per penyalur, bisa diatur dalam satu pesanan bisa beli sampai berapa. Jadi misal diset 6, nanti pas buat pesanan cuma bisa 6 maksimum (sebelumnya pasti bisa sampai 10).
-.
+   Per acara, per penyalur, bisa diatur dalam satu pesanan bisa beli sampai berapa. Jadi misal diset 6, nanti pas buat pesanan cuma bisa 6 maksimum (sebelumnya pasti bisa sampai 10).
+   .
 2. [Situs web] Persiapan untuk microsite dan whitelabel.
 3. [Situs web] Saat share link acara di WA, FB, dkk, kini muncul nama dan gambarnya.
 4. [Situs web] Implementasi maksimum per pesanan.
@@ -44,15 +44,15 @@ _Tidak ada halaman baru di rilis ini._
 ### Tangkapan layar
 
 - _Peningkatan fitur #1 - Atur_
-  ![gambar](aset/image-14.png)
+  .![gambar](aset/image-14.png)
 - _Peningkatan fitur #1 - Hasil_
-  ![gambar](aset/image-15.png)
+  .![gambar](aset/image-15.png)
 - _Peningkatan fitur #3 - Sebelum_
-  ![gambar](aset/image-16.png)
+  .![gambar](aset/image-16.png)
 - _Peningkatan fitur #3 - Sesudah_
-  ![gambar](aset/image-17.png)
+  .![gambar](aset/image-17.png)
 - _Peningkatan fitur #4_
-  ![gambar](aset/image-18.png)
+  .![gambar](aset/image-18.png)
 ---
 
 ## 16 Juni 2025
@@ -117,8 +117,8 @@ _Tidak ada halaman baru di rilis ini._
 **Peningkatan fitur:**
 1. Footer saat cetak diganti menjadi "Dikeluarkan/Generated" (sebelumnya "Disajikan/Presented").
 2. Bisa set Heading untuk penjelasan acara dan syarat dan ketentuan di kelola konten (sebelumnya hanya ada Small, Normal, Big). 
-Ketik judul section barunya, di kiri atas, klik Normal, lalu pilih Heading.
-Ini bisa dipakai untuk menambahkan "Cara penukaran tiket" yang diminta, atau bahkan lebih banyak lagi. Misal mau ada mau ada "Cara ikut undian", "Cara pengambilan merchandise", "Cara pengembalian tiket", bisa, soalnya ini bukan kolom baru. Jadi, bisa dipilih juga mau langsung muncul di depan (penjelasan acara), atau muncul pas setuju (syarat dan ketentuan).
+   Ketik judul section barunya, di kiri atas, klik Normal, lalu pilih Heading.
+   Ini bisa dipakai untuk menambahkan "Cara penukaran tiket" yang diminta, atau bahkan lebih banyak lagi. Misal mau ada mau ada "Cara ikut undian", "Cara pengambilan merchandise", "Cara pengembalian tiket", bisa, soalnya ini bukan kolom baru. Jadi, bisa dipilih juga mau langsung muncul di depan (penjelasan acara), atau muncul pas setuju (syarat dan ketentuan).
 3. [Situs web] Implementasi fitur Heading untuk penjelasan acara dan syarat dan ketentuan di rincian acara
 4. [Situs web] Kini acara yang dibuat untuk penjualan di cara.simera.web.id akan muncul di cara.simera.web.id/lamanlabuh.
 
@@ -144,7 +144,7 @@ _Tidak ada halaman baru dan perbaikan bug di rilis ini._
 **Peningkatan fitur:**
 1. Saat klik link informasi di mana entri kode penukaran atau buat pesanan tidak tersedia karena penerbit kode tidak sesuai, penyalur yang dipilih akan langsung terbuka (sebelumnya harus pilih ulang)
 2. Bisa lampirkan gambar untuk penjelasan acara, syarat dan ketentuan, dan pemberitahuan pesanan selesai di kelola konten. 
-Cari gambarnya di Internet (bisa gambar/logo yang udah diupload di halaman ini, atau minta promotor upload ke web/image hosting mereka), klik kanan, copy image link, terus paste di kotaknya.
+   Cari gambarnya di Internet (bisa gambar/logo yang udah diupload di halaman ini, atau minta promotor upload ke web/image hosting mereka), klik kanan, copy image link, terus paste di kotaknya.
 
 **Perbaikan bug:**
 1. Di kelola sesi pengguna, masih tarik data dari maha.simera.web.id di coba.simera.web.id.
