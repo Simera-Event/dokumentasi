@@ -5,13 +5,13 @@
 
 > **Daftar isi**
 > 
-> - [Daftar dokumentasi API](#daftar-panduan-pengguna)
+> - [Daftar dokumentasi API](#daftar-dokumentasi-api)
 
 ## Daftar dokumentasi API
 Apa situs yang dibutuhkan dokumentasinya?
 
 - [Sistem](sistem) (maha.simera.web.id)
-- [Penjualan](lamanlabuh) (www.simera.web.id)
+- [Situs web](lamanlabuh) (www.simera.web.id)
 
 ---
 

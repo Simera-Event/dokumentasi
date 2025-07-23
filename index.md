@@ -5,6 +5,7 @@
 Apa yang Anda perlukan?
 - [Panduan pengguna](md/)
 - [Dokumentasi API](yaml/)
+- [Catatan rilis](rilis/)
 
 .
 
