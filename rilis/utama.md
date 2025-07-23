@@ -137,7 +137,7 @@ _Tidak ada halaman baru dan perbaikan bug di rilis ini._
 
 ## Yang lebih lama
 
-- [2025 H1](./utama_2025H1.md)
+- [2025 H1](./utama_2025H1)
 
 ---
 

@@ -2,7 +2,7 @@
 
 [Beranda](..) &raquo; [Catatan rilis](.) &raquo; 
 # Sistem dan situs web (2025 H1)
-&laquo; [Kembali ke terbaru](./utama.md) 
+&laquo; [Kembali ke terbaru](./utama) 
 
 > **Daftar isi**
 > 
