@@ -11,7 +11,7 @@
 Apa situs yang ingin dilihat catatan rilis dan log perubahannya?
 
 - [Sistem dan situs web](utama) (maha.simera.web.id, www.simera.web.id, dan coba.simera.web.id)
-- [Dokumentasi](https://www.github.com/Simera-Event/dokumentasi/deployments) (cara.simera.web.id)
+- [Dokumentasi](https://www.github.com/Simera-Event/dokumentasi/commits/master/) (cara.simera.web.id)
 
 ---
 
