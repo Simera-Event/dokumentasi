@@ -5,6 +5,7 @@
 
 > **Daftar isi**
 > 
+> - [6 Agustus 2025](#6-agustus-2025)
 > - [22 Juli 2025](#22-juli-2025)
 > - [14 Juli 2025](#14-juli-2025)
 > - [8 Juli 2025](#8-juli-2025)
