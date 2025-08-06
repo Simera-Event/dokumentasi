@@ -14,6 +14,34 @@
 
 ---
 
+## 6 Agustus 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`8374b41`|`e320b38`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Metode baru di siapkan kode pintu versi inject (requestnya dipecah kecil-kecil, dan penambahan progress bar)
+2. Penambahan menu untuk ke coba.simera.web.id dan mini.simera.web.id dari menu header
+3. Maksimum per pesanan bisa dibuat hingga 50 di ketersediaan acara
+4. Jika boleh membeli >12, banyaknya bisa diketik manual dalam textbox, tidak memilih dari dropdown lagi di buat pesanan
+5. [Situs web] Deteksi otomatis bahasa di pengaturan perangkat/sistem. Jika menggunakan OS bahasa Inggris, otomatis halaman ditampilkan dalam bahasa Inggris
+6. [Situs web] Penambahan separator di pilihan kategori penjualan
+
+**Perbaikan bug:**
+1. [Situs web] Saat menembak ID acara di URL, atau membagikan link, untuk acara yang seharusnya tidak dibuka untuk penjualan, judul halaman (saat dibuka), gambar dan keterangan (saat link dibagikan) masih menampilkan informasi dari acara tersebut.
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #4_
+  <br>![gambar](aset/image-26.png)
+
+---
+
 ## 22 Juli 2025
 
 |           | Sistem  | Situs web |
