@@ -5,6 +5,7 @@
 
 > **Daftar isi**
 > 
+> - [12 Agustus 2025](#12-agustus-2025)
 > - [6 Agustus 2025](#6-agustus-2025)
 > - [22 Juli 2025](#22-juli-2025)
 > - [14 Juli 2025](#14-juli-2025)
@@ -12,6 +13,33 @@
 > - [1 Juli 2025](#1-juli-2025)
 > - [Yang lebih lama](#yang-lebih-lama)
 > - [Informasi lebih lanjut](#informasi-lebih-lanjut)
+
+---
+
+## 12 Agustus 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`b263c94`|`e320b38`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di daftar lengkap pesanan, ada filter baru: "Status pesanan: Disimpan"
+2. Di daftar lengkap pesanan, saat penyalur dipilih "(Semua penyalur)" akan muncul kolom baru: "Penyalur".
+3. Penambahan ringkasan di daftar lengkap pesanan
+   
+   Jadi kalau mau lihat berapa banyak yang terjual, atau yang belum dibayar, dsb bisa langsung halaman ini, tidak perlu ekpor ke CSV lagi terus SUM/COUNT manual.
+4. Penambahan fungsi untuk membatalkan pesanan atau menunda pembayaran di bayar pesanan
+   
+   Sama seperti di situs penjualan di mana pelanggan bisa membatalkan pesanannya sendiri dan tidak lanjut ke pembayaran, sekarang internal order pun bisa dibatalkan. Statusnya bisa difilter di menu daftar pesan
+
+_Tidak ada halaman baru dan perbaikan bug di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1, #2 dan #3_
+  <br>![gambar](aset/image-27.png)
 
 ---
 
