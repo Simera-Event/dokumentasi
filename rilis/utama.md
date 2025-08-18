@@ -3,16 +3,60 @@
 [Beranda](..) &raquo; [Catatan rilis](.) &raquo; 
 # Sistem dan situs web (Terbaru)
 
-> **Daftar isi**
-> 
-> - [12 Agustus 2025](#12-agustus-2025)
-> - [6 Agustus 2025](#6-agustus-2025)
-> - [22 Juli 2025](#22-juli-2025)
-> - [14 Juli 2025](#14-juli-2025)
-> - [8 Juli 2025](#8-juli-2025)
-> - [1 Juli 2025](#1-juli-2025)
-> - [Yang lebih lama](#yang-lebih-lama)
-> - [Informasi lebih lanjut](#informasi-lebih-lanjut)
+<blockquote>
+
+**Daftar isi**
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
+<!-- code_chunk_output -->
+
+- [18 Agustus 2025](#18-agustus-2025)
+- [12 Agustus 2025](#12-agustus-2025)
+- [6 Agustus 2025](#6-agustus-2025)
+- [22 Juli 2025](#22-juli-2025)
+- [14 Juli 2025](#14-juli-2025)
+- [8 Juli 2025](#8-juli-2025)
+- [1 Juli 2025](#1-juli-2025)
+- [Yang lebih lama](#yang-lebih-lama)
+- [Informasi lebih lanjut](#informasi-lebih-lanjut)
+
+<!-- /code_chunk_output -->
+
+</blockquote>
+
+---
+
+## 18 Agustus 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`8264856`|`e320b38`  |
+
+### Perubahan
+
+**Halaman baru:**
+1. Halaman kirim pesanan
+   
+   Fungsi kirim rincian pesanan sekarang berada di halaman ini. Nomor kursi untuk masing-masing kode penukaran nantinya bisa diatur di sini. Selain itu, ada juga penambahan fungsi untuk membatalkan terbitan atau menunda pengiriman rincian. Pembatalan terbitan juga akan menghapus kode penukaran terkait.
+   
+**Peningkatan fitur:**
+1. Di daftar lengkap pesanan, saat penyalur dipilih "(Semua penyalur)", akan muncul kolom baru: "Penyalur" di hasil unduh ke CSV
+2. Di bayar pesanan, jumlah rincian ditampilkan di samping harga untuk konfirmasi
+3. Di bayar pesanan, fungsi kirim rincian pesanan dihapus dari sini, dan dipindah ke kirim pesanan
+4. Di bayar pesanan, pilihan tindakan diubah menjadi radio button, hanya ada satu tombol lanjut sekarang
+
+**Perbaikan bug:**
+1. Saat ada yang bertindak tanpa masuk log (seperti pelanggan membuka rincian pesanan dan mengirim ulang), ada kemungkinan kueri database tidak tercatat di log
+2. Saat pelanggan membuka kembali rincian pesanan di mana penerbitan kode penukaran sudah dibatalkan atau belum diterbitkan, akan terjadi masalah di kode QR karena kodenya kosong
+
+### Tangkapan layar
+
+- _Peningkatan #2 dan #3 - Sebelum_
+  <br>![gambar](aset/image-28.png)
+- _Peningkatan #2 dan #3 - Sesudah_
+  <br>![gambar](aset/image-29.png)
+- _Halaman baru #1_
+  <br>![gambar](aset/image-30.png)
 
 ---
 
@@ -26,13 +70,13 @@
 
 **Peningkatan fitur:**
 1. Di daftar lengkap pesanan, ada filter baru: "Status pesanan: Disimpan"
-2. Di daftar lengkap pesanan, saat penyalur dipilih "(Semua penyalur)" akan muncul kolom baru: "Penyalur".
+2. Di daftar lengkap pesanan, saat penyalur dipilih "(Semua penyalur)" akan muncul kolom baru: "Penyalur"
 3. Penambahan ringkasan di daftar lengkap pesanan
    
    Jadi kalau mau lihat berapa banyak yang terjual, atau yang belum dibayar, dsb bisa langsung halaman ini, tidak perlu ekpor ke CSV lagi terus SUM/COUNT manual.
 4. Penambahan fungsi untuk membatalkan pesanan atau menunda pembayaran di bayar pesanan
    
-   Sama seperti di situs penjualan di mana pelanggan bisa membatalkan pesanannya sendiri dan tidak lanjut ke pembayaran, sekarang internal order pun bisa dibatalkan. Statusnya bisa difilter di menu daftar pesan
+   Sama seperti di situs penjualan di mana pelanggan bisa membatalkan pesanannya sendiri dan tidak lanjut ke pembayaran, sekarang internal order pun bisa dibatalkan. Statusnya bisa difilter di menu daftar pesan.
 
 _Tidak ada halaman baru dan perbaikan bug di rilis ini._
 
@@ -60,7 +104,7 @@ _Tidak ada halaman baru dan perbaikan bug di rilis ini._
 6. [Situs web] Penambahan separator di pilihan kategori penjualan
 
 **Perbaikan bug:**
-1. [Situs web] Saat menembak ID acara di URL, atau membagikan link, untuk acara yang seharusnya tidak dibuka untuk penjualan, judul halaman (saat dibuka), gambar dan keterangan (saat link dibagikan) masih menampilkan informasi dari acara tersebut.
+1. [Situs web] Saat menembak ID acara di URL, atau membagikan link, untuk acara yang seharusnya tidak dibuka untuk penjualan, judul halaman (saat dibuka), gambar dan keterangan (saat link dibagikan) masih menampilkan informasi dari acara tersebut
 
 _Tidak ada halaman baru di rilis ini._
 

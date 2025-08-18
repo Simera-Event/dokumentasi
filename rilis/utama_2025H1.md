@@ -2,19 +2,28 @@
 
 [Beranda](..) &raquo; [Catatan rilis](.) &raquo; 
 # Sistem dan situs web (2025 H1)
-&laquo; [Kembali ke terbaru](./utama) 
+&laquo; [Kembali ke terbaru](./utama)
 
-> **Daftar isi**
-> 
-> - [23 Juni 2025](#23-juni-2025)
-> - [16 Juni 2025](#16-juni-2025)
-> - [5 Juni 2025](#5-juni-2025)
-> - [27 Mei 2025](#27-mei-2025)
-> - [20 Mei 2025](#20-mei-2025)
-> - [10 Mei 2025](#10-mei-2025)
-> - [5 Mei 2025](#5-mei-2025)
-> - [Yang lebih lama](#yang-lebih-lama)
-> - [Informasi lebih lanjut](#informasi-lebih-lanjut)
+<blockquote>
+
+**Daftar isi**
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
+<!-- code_chunk_output -->
+
+- [23 Juni 2025](#23-juni-2025)
+- [16 Juni 2025](#16-juni-2025)
+- [5 Juni 2025](#5-juni-2025)
+- [27 Mei 2025](#27-mei-2025)
+- [20 Mei 2025](#20-mei-2025)
+- [10 Mei 2025](#10-mei-2025)
+- [5 Mei 2025](#5-mei-2025)
+- [Yang lebih lama](#yang-lebih-lama)
+- [Informasi lebih lanjut](#informasi-lebih-lanjut)
+
+<!-- /code_chunk_output -->
+
+</blockquote>
 
 ---
 
