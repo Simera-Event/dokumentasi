@@ -1,2 +1,4 @@
 name: ""
 title: null
+kramdown:
+  parse_block_html: true
