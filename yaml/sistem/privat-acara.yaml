@@ -422,7 +422,17 @@ paths:
                 - pesanan
       responses:
         200:
-          description: Sukses
+          description: |
+            Sukses
+            
+            Pada contoh di bawah, data tiket saat didekripsi akan mengembalikan:
+            ```json
+            [
+              {"id":339350,"kode":"1168572337593","id_kategori":12,"status":"aktif","nomor_kursi":"","dijual":"2025-08-25 14:31:43","masuk_pertama":"2025-08-25 14:31:43","keluar_terakhir":"0000-00-00 00:00:00","jumlah_pakai":1,"nama_pembeli":"Sistem","identitas_pembeli":"Tidak tersedia","catatan_pembeli":"Dibeli secara otomatis saat pakai masuk","lampiran":""},
+              {"id":339351,"kode":"1169329369355","id_kategori":12,"status":"nonaktif","nomor_kursi":"","dijual":"0000-00-00 00:00:00","masuk_pertama":"0000-00-00 00:00:00","keluar_terakhir":"0000-00-00 00:00:00","jumlah_pakai":0,"nama_pembeli":"","identitas_pembeli":"","catatan_pembeli":"","lampiran":""},
+              {"id":339352,"kode":"3576250746380","id_kategori":12,"status":"aktif","nomor_kursi":"","dijual":"0000-00-00 00:00:00","masuk_pertama":"0000-00-00 00:00:00","keluar_terakhir":"0000-00-00 00:00:00","jumlah_pakai":0,"nama_pembeli":"","identitas_pembeli":"","catatan_pembeli":"","lampiran":""}
+            ]
+            ```
           content:
             application/octet-stream:
               example: {
@@ -432,20 +442,20 @@ paths:
                   "waktu": "2025-03-17 20:42:58"
                 },
                 "acara": {
-                  "id": 4,
-                  "nama": "Tes Penjualan",
+                  "id": 8,
+                  "nama": "Acara Terbatas",
                   "waktu_mulai": "2024-08-02 00:00:00",
                   "waktu_akhir": "2024-08-02 23:59:00",
                   "nama_tempat": "Gelora Bung Karno (GBK), Stadion Madya"
                 },
                 "kategori": [
                   {
-                    "id": 11,
+                    "id": 12,
                     "nama": "Istimewa",
                     "status": "aktif"
                   }
                 ],
-                "tiket": "eJydkM1OwzAQhF/F8rmx1o6LS868AdwQipbEqFvHSeSfE+LdcS2EKDQHKu3BnrFm1t/zO6eRd+pg7ozecbeMlnccQAoljZBaC2g13/GRBpvQVQ+gqcMAujrVP2WcNu2YMOVYbHSJ3oowL34JvcshUlGL4DFm1682JPS4mePslDH0yQZ0Rwqb707ZT3jsV3RY8qH0ldSS7l/t9FVIo50TJYyX8oBlVZwvxQn9SgHn8+1j9wPZ/huZ1EaAMULpgwB1/x9kCpRupGwUMKW6fdtBexOy6zm3IZN/kD1STNZvgHuiER0rHdGOhFcxPtD5wKIdMCBb0uIxUWQRMbFayup/ftN++QRyNsNw"
+                "tiket": "eJzVks1OxCAQgF+FcG4Tfkp/OPsGejOmGbfospTSAD0Z391pD6bR7proSULIBD6GmS88vlE7UC1lJxUrqAuDoZpyXreqEVI2qpO0QKR3kM1riJZqLgqaMuQlIQku2xckpuBD7N0SExIUNwZ7WWDEWDChStaWQhFeacl1tWb0kBbXzyZm8HCVcmZcIPbZRHBnG5FjOMptEsb0NpG7LH6Ecz+Dg7VALAezYnb/bMa1nnubsvFbI2bKNkPaHT7YARzBN5IZLCB0AuwOph1yZ9eAJHOCCCTk4CHbRBJAJtujZOsH747gZxthWiW8Fzu5fC+3k6KTuCp1U+4Upp/9Hhv56veY+p1f9s3vFbOHLm9JEp+SpGpqoVhT1bJlf/yB/93Q0wcNVhTO"
               }
         422:
           allOf:
