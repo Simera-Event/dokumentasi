@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [26 Agustus 2025](#26-agustus-2025)
 - [18 Agustus 2025](#18-agustus-2025)
 - [12 Agustus 2025](#12-agustus-2025)
 - [6 Agustus 2025](#6-agustus-2025)
@@ -23,6 +24,32 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 26 Agustus 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`b627b55`|`e320b38`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Di kirim pesanan, fungsi tetapkan kursi sudah bisa digunakan
+2. Di kirim pesanan, ada tombol "lihat kode penukaran"
+   
+   Jadi pesanan dengan status 'terbit' bisa dilihat juga kode penukarannya, tidak harus menunggu statusnya menjadi 'selesai'
+3. Di daftar lengkap pesanan, pesanan yang berstatus selesai bisa dikembalikan untuk diganti nomor kursinya
+4. Di daftar lengkap pesanan, pesanan yang paling baru akan muncul di atas (seperti di daftar acara)
+5. [Mobile app] Penambahan informasi kategori kode penukaran dan kode pintu saat sinkronisasi kirim
+
+**Perbaikan bug:**
+1. Di cetak rincian pesanan, jika penyalur bukan Simera, nomor kursi tidak muncul 
+2. Di daftar lengkap pesanan, jika penyalur bukan Simera, saat tombol "lihat kode penukaran" diklik, hasilnya kosong karena ada perbedaan penyalur
+3. Di daftar lengkap pesanan, jika filter dipilih "Status pesanan: Disimpan", saat unduh ke CSV, filter tersebut diabaikan
+
+_Tidak ada halaman baru di rilis ini._
 
 ---
 
