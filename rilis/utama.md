@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [2 September 2025](#2-september-2025)
 - [26 Agustus 2025](#26-agustus-2025)
 - [18 Agustus 2025](#18-agustus-2025)
 - [12 Agustus 2025](#12-agustus-2025)
@@ -27,11 +28,42 @@
 
 ---
 
+## 2 September 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`e983371`|`e320b38`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Penyempurnaan alur bayar pesanan - berikan kode pintu - hubungkan dan jual
+   
+   Sekarang, jika saat bayar pesanan dipilih opsi "Berikan kode pintu", pengguna akan diarahkan kembali ke buat pesanan ketika selesai menghubungkan kode pintu, sistem siap untuk menerima pesanan selanjutnya.
+   
+   Sebelumnya, pengguna diarahkan ke tukar kode penukaran setelah menghubungkan, membuat alur pesanan terputus.
+2. Di buat pesanan, ada tombol "Simpan saja" selain tombol "Simpan dan lanjutkan ke pembayaran" yang sudah ada
+
+   Sekarang, entri banyak pesanan akan lebih mudah dengan menggunakan tombol ini. Setelah pesanan dibuat, sistem akan tetap berada di halaman buat pesanan, siap untuk menerima pesanan selanjutnya. Jika semua pesanan sudah selesai dientri, pembayaran dapat dilakukan dari menu daftar lengkap pesanan. Alur alternatif baru: pesan, pesan, pesan, bayar, bayar, bayar
+   
+   Sebelumnya, pengguna diarahkan ke pembayaran setelah membuat pesanan, membuat entri banyak pesanan merepotkan. Alur lama: pesan, bayar, pesan, bayar, pesan, bayar
+3. Di buat, bayar, dan kirim pesanan, tombol kirim dinonaktifkan setelah diklik, untuk menghindari dobel kirim
+4. Di cetak pesanan, dalam mode "Seluruh kode penukaran berada di lembar yang sama", spasi antar baris QR code diperluas agar lebih mudah dipindai
+5. Di temukan kode penukaran, ada perubahan minor di ikon
+
+**Perbaikan bug:**
+1. Saat dijalankan di server Windows (misal saat intranet), ikon material symbols selalu berwarna hitam, karena ada perbedaan MIME-types antar OS
+2. Di sinkronisasi data, nama berkas terputus jika nama acara mengandung tanda petik
+
+_Tidak ada halaman baru di rilis ini._
+
+---
+
 ## 26 Agustus 2025
 
 |           | Sistem  | Situs web |
 | --------- |:-------:|:---------:|
-| **Versi** |`b627b55`|`e320b38`  |
+| **Versi** |`9effe60`|`e320b38`  |
 
 ### Perubahan
    
