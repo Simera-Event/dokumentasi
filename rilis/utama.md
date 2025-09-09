@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [9 September 2025](#9-september-2025)
 - [2 September 2025](#2-september-2025)
 - [26 Agustus 2025](#26-agustus-2025)
 - [18 Agustus 2025](#18-agustus-2025)
@@ -25,6 +26,28 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 9 September 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`c08aba2`|`e320b38`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Metode baru di entri kode penukaran versi banyak (requestnya dipecah kecil-kecil, dan penambahan progress bar)
+2. Optimasi kueri dan koneksi DB di entri kode penukaran versi satuan maupun banyak (prosesnya akan semakin cepat)
+3. Optimasi kueri di hapus data
+3. Jika proses siapkan kode pintu versi inject dan entri kode penukaran versi banyak terputus di tengah jalan karena masalah koneksi (progress bar belum penuh), akan ditampilkan berapa banyak yang sudah terlanjur diproses
+
+**Perbaikan bug:**
+1. Di siapkan kode pintu versi inject dan entri kode penukaran versi banyak, halaman hasil bisa gagal dimuat jika ada terlalu banyak data yang gagal diproses, misal karena mengirim data duplikat
+1. Di siapkan kode pintu versi inject dan entri kode penukaran versi banyak, jika proses pertama gagal dan proses kedua berhasil, data yang gagak kembali muncul di hasil kedua
+
+_Tidak ada halaman baru di rilis ini._
 
 ---
 
