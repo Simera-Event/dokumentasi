@@ -45,7 +45,7 @@
 
 **Perbaikan bug:**
 1. Di siapkan kode pintu versi inject dan entri kode penukaran versi banyak, halaman hasil bisa gagal dimuat jika ada terlalu banyak data yang gagal diproses, misal karena mengirim data duplikat
-1. Di siapkan kode pintu versi inject dan entri kode penukaran versi banyak, jika proses pertama gagal dan proses kedua berhasil, data yang gagak kembali muncul di hasil kedua
+1. Di siapkan kode pintu versi inject dan entri kode penukaran versi banyak, jika proses pertama gagal dan proses kedua berhasil, data yang gagal kembali muncul di hasil kedua
 
 _Tidak ada halaman baru di rilis ini._
 
