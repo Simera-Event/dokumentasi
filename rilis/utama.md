@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [16 September 2025](#16-september-2025)
 - [9 September 2025](#9-september-2025)
 - [2 September 2025](#2-september-2025)
 - [26 Agustus 2025](#26-agustus-2025)
@@ -29,6 +30,39 @@
 
 ---
 
+## 16 September 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`1b5567d`|`e320b38`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Di tukar kode penukaran, ada opsi untuk mengirim kabar ke pantauan (lihat halaman baru #1 untuk selengkapnya)
+2. Pembatasan optimasi kueri dan koneksi DB di entri kode penukaran dan siapkan kode pintu versi inject hanya saat jumlah data besar, berhubung optimasi tidak memberikan hasil positif saat jumlah data kecil
+3. Tombol layar penuh (di tukar kode penukaran, pakai kode pintu, dan halaman pantau yang baru) akan secara otomatis menutup bilah sisi menu
+
+**Halaman baru:**
+1. Halaman pantauan tukar kode penukaran
+   
+   Saat tukar kode penukaran dilakukan, sistem akan mengirim kabar untuk pantauan tukar, sesuai saluran yang dipilih oleh petugas penukaran. Tersedia 8 saluran yang dapat dipilih. Jika yang dipilih adalah 0, maka pengiriman kabar dinonaktifkan.
+   
+   Kemudian, melalui halaman pantauan tukar kode penukaran yang baru ini, sesama petugas penukaran dapat memantau salah satu saluran untuk mengetahui kode penukaran apa yang sedang ditukar, bisa dikelompokkan menurut pengguna maupun kategori. Informasi yang ditampilkan meliputi waktu penukaran, nama kategori, nomor kursi (atau nama pembeli jika tidak tersedia), serta nama petugas yang melakukan penukaran. Opsi untuk membacakan dengan lantang juga tersedia.
+
+_Tidak ada perbaikan bug di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan #1_
+  <br>![gambar](aset/image-31.png)
+- _Halaman baru #1 - Pengaturan_
+  <br>![gambar](aset/image-32.png)
+- _Halaman baru #1 - Pantauan berjalan_
+  <br>![gambar](aset/image-33.png)
+
+---
+
 ## 9 September 2025
 
 |           | Sistem  | Situs web |
@@ -41,11 +75,11 @@
 1. Metode baru di entri kode penukaran versi banyak (requestnya dipecah kecil-kecil, dan penambahan progress bar)
 2. Optimasi kueri dan koneksi DB di entri kode penukaran versi satuan maupun banyak (prosesnya akan semakin cepat)
 3. Optimasi kueri di hapus data
-3. Jika proses siapkan kode pintu versi inject dan entri kode penukaran versi banyak terputus di tengah jalan karena masalah koneksi (progress bar belum penuh), akan ditampilkan berapa banyak yang sudah terlanjur diproses
+4. Jika proses siapkan kode pintu versi inject dan entri kode penukaran versi banyak terputus di tengah jalan karena masalah koneksi (progress bar belum penuh), akan ditampilkan berapa banyak yang sudah terlanjur diproses
 
 **Perbaikan bug:**
 1. Di siapkan kode pintu versi inject dan entri kode penukaran versi banyak, halaman hasil bisa gagal dimuat jika ada terlalu banyak data yang gagal diproses, misal karena mengirim data duplikat
-1. Di siapkan kode pintu versi inject dan entri kode penukaran versi banyak, jika proses pertama gagal dan proses kedua berhasil, data yang gagal kembali muncul di hasil kedua
+2. Di siapkan kode pintu versi inject dan entri kode penukaran versi banyak, jika proses pertama gagal dan proses kedua berhasil, data yang gagal kembali muncul di hasil kedua
 
 _Tidak ada halaman baru di rilis ini._
 
