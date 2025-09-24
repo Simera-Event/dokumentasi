@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [24 September 2025](#24-september-2025)
 - [16 September 2025](#16-september-2025)
 - [9 September 2025](#9-september-2025)
 - [2 September 2025](#2-september-2025)
@@ -27,6 +28,26 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 24 September 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`b669634`|`e320b38`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Di pantauan tukar, ada penambahan nada sebelum pengumuman dibacakan
+2. Di pantauan tukar, ada pilihan untuk memilih suara TTS
+3. Di tetapkan kursi kode pintu, kode pintu yang diterbitkan oleh penyelenggara sekarang tetap diatur jika nomor kursi tidak diisi saat disiapkan
+
+**Perbaikan bug:**
+1. Di pantauan tukar, ada kemungkinan suara bawaan gagal diambil karena ada perbedaan kode bahasa antar OS, misal kode untuk bahasa Indonesia adalah 'in-ID' di Linux, tapi 'id_ID' di Windows.
+2. Metode baru di tetapkan kursi kode pintu (requestnya dipecah kecil-kecil, dan penambahan progress bar)
+3. Optimasi kueri dan koneksi DB di tetapkan kursi kode pintu (prosesnya akan semakin cepat) saat jumlah data besar
 
 ---
 
