@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [2 Oktober 2025](#2-oktober-2025)
 - [24 September 2025](#24-september-2025)
 - [16 September 2025](#16-september-2025)
 - [9 September 2025](#9-september-2025)
@@ -28,6 +29,37 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 2 Oktober 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`056bdf5`|`e320b38`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Di menu kelola akun, tampilan telah diperbarui, dan ditambahkan informasi baru seperti tanggal pendaftaran, tanggal terakhir PIN diganti, dan tanggal masuk terakhir
+2. Saat pertama kali pengguna masuk ke sistem, langsung dimunculkan formulir ganti PIN, bukan halaman kelola akun secara umum
+3. Di menu kelola akun bagian ganti PIN, aturan dituliskan pada halaman sehingga pengguna bisa menyiapkan PIN terlebih dahulu, tanpa harus mencoba berulang kali
+
+**Halaman baru:**
+1. Halaman kelola pelanggan: menampilkan semua pelanggan yang sudah mendaftar di situs penjualan, tidak hanya dari proyek acara yang sedang dibuka
+
+_Tidak ada perbaikan bug di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan #1 - Sebelum_
+  <br>![gambar](aset/image-34.png)
+- _Peningkatan #1 - Sesudah_
+  <br>![gambar](aset/image-35.png)
+- _Peningkatan #2 dan #3_
+  <br>![gambar](aset/image-36.png)
+- _Halaman baru #1_
+  <br>![gambar](aset/image-37.png)
 
 ---
 
