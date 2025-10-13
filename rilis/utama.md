@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [13 Oktober 2025](#13-oktober-2025)
 - [2 Oktober 2025](#2-oktober-2025)
 - [24 September 2025](#24-september-2025)
 - [16 September 2025](#16-september-2025)
@@ -32,6 +33,35 @@
 
 ---
 
+## 13 Oktober 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`056bdf5`|`3b5042b`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Revamp kelola pengguna
+   
+   Di sini akan terlihat berapa pengguna yang dimiliki tiap peran. Ada filter juga, cari pengguna menurut nama jadi lebih mudah. Bisa juga misalnya untuk melihat petugas yang saat ini terhubung dengan penyelenggara tertentu.
+2. Di kelola pengguna, tabel informasi hak akses ditranspos agar tidak semakin memanjang, dan menyesuaikan menu di kiri yang ditampilkan dari atas ke bawah
+3. Di daftar lengkap (penukaran, pintu, pesanan), bilah lampiran (tukar, hubungkan, pakai, dsb), dan kelola pelanggan, ada perubahan minor di ikon
+4. [Situs web] Di footer, tautan ke Instagram ditambahkan, tautan ke Twitter dan Linkedin dihapus
+
+_Tidak ada halaman baru dan perbaikan bug di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan #1 dan #2 - Sebelum_
+  <br>![gambar](aset/image-38.png)
+- _Peningkatan #1 - Sesudah_
+  <br>![gambar](aset/image-39.png)
+- _Peningkatan #2 - Sesudah_
+  <br>![gambar](aset/image-40.png)
+
+---
+
 ## 2 Oktober 2025
 
 |           | Sistem  | Situs web |
@@ -39,27 +69,27 @@
 | **Versi** |`056bdf5`|`e320b38`  |
 
 ### Perubahan
-   
+
+**Halaman baru:**
+1. Halaman kelola pelanggan: menampilkan semua pelanggan yang sudah mendaftar di situs penjualan, tidak hanya dari proyek acara yang sedang dibuka
+
 **Peningkatan fitur:**
 1. Di menu kelola akun, tampilan telah diperbarui, dan ditambahkan informasi baru seperti tanggal pendaftaran, tanggal terakhir PIN diganti, dan tanggal masuk terakhir
 2. Saat pertama kali pengguna masuk ke sistem, langsung dimunculkan formulir ganti PIN, bukan halaman kelola akun secara umum
 3. Di menu kelola akun bagian ganti PIN, aturan dituliskan pada halaman sehingga pengguna bisa menyiapkan PIN terlebih dahulu, tanpa harus mencoba berulang kali
 
-**Halaman baru:**
-1. Halaman kelola pelanggan: menampilkan semua pelanggan yang sudah mendaftar di situs penjualan, tidak hanya dari proyek acara yang sedang dibuka
-
 _Tidak ada perbaikan bug di rilis ini._
 
 ### Tangkapan layar
 
+- _Halaman baru #1_
+  <br>![gambar](aset/image-37.png)
 - _Peningkatan #1 - Sebelum_
   <br>![gambar](aset/image-34.png)
 - _Peningkatan #1 - Sesudah_
   <br>![gambar](aset/image-35.png)
 - _Peningkatan #2 dan #3_
   <br>![gambar](aset/image-36.png)
-- _Halaman baru #1_
-  <br>![gambar](aset/image-37.png)
 
 ---
 
@@ -79,7 +109,7 @@ _Tidak ada perbaikan bug di rilis ini._
 5. Di pantauan tukar, ada pilihan untuk memilih suara TTS
 
 **Perbaikan bug:**
-1. Di pantauan tukar, ada kemungkinan suara bawaan gagal diambil karena ada perbedaan kode bahasa antar OS, misal kode untuk bahasa Indonesia adalah 'in-ID' di Linux, tapi 'id_ID' di Windows.
+1. Di pantauan tukar, ada kemungkinan suara bawaan gagal diambil karena ada perbedaan kode bahasa antar OS, misal kode untuk bahasa Indonesia adalah 'in-ID' di Android 15 ke bawah, tapi 'id_ID' di Windows.
 
 _Tidak ada halaman baru di rilis ini._
 
@@ -92,11 +122,6 @@ _Tidak ada halaman baru di rilis ini._
 | **Versi** |`1b5567d`|`e320b38`  |
 
 ### Perubahan
-   
-**Peningkatan fitur:**
-1. Di tukar kode penukaran, ada opsi untuk mengirim kabar ke pantauan (lihat halaman baru #1 untuk selengkapnya)
-2. Pembatasan optimasi kueri dan koneksi DB di entri kode penukaran dan siapkan kode pintu versi inject hanya saat jumlah data besar, berhubung optimasi tidak memberikan hasil positif saat jumlah data kecil
-3. Tombol layar penuh (di tukar kode penukaran, pakai kode pintu, dan halaman pantau yang baru) akan secara otomatis menutup bilah sisi menu
 
 **Halaman baru:**
 1. Halaman pantauan tukar kode penukaran
@@ -105,16 +130,21 @@ _Tidak ada halaman baru di rilis ini._
    
    Kemudian, melalui halaman pantauan tukar kode penukaran yang baru ini, sesama petugas penukaran dapat memantau salah satu saluran untuk mengetahui kode penukaran apa yang sedang ditukar, bisa dikelompokkan menurut pengguna maupun kategori. Informasi yang ditampilkan meliputi waktu penukaran, nama kategori, nomor kursi (atau nama pembeli jika tidak tersedia), serta nama petugas yang melakukan penukaran. Opsi untuk membacakan dengan lantang juga tersedia.
 
+**Peningkatan fitur:**
+1. Di tukar kode penukaran, ada opsi untuk mengirim kabar ke pantauan (lihat halaman baru #1 untuk selengkapnya)
+2. Pembatasan optimasi kueri dan koneksi DB di entri kode penukaran dan siapkan kode pintu versi inject hanya saat jumlah data besar, berhubung optimasi tidak memberikan hasil positif saat jumlah data kecil
+3. Tombol layar penuh (di tukar kode penukaran, pakai kode pintu, dan halaman pantau yang baru) akan secara otomatis menutup bilah sisi menu
+
 _Tidak ada perbaikan bug di rilis ini._
 
 ### Tangkapan layar
 
-- _Peningkatan #1_
-  <br>![gambar](aset/image-31.png)
 - _Halaman baru #1 - Pengaturan_
   <br>![gambar](aset/image-32.png)
 - _Halaman baru #1 - Pantauan berjalan_
   <br>![gambar](aset/image-33.png)
+- _Peningkatan #1_
+  <br>![gambar](aset/image-31.png)
 
 ---
 
@@ -222,12 +252,12 @@ _Tidak ada halaman baru di rilis ini._
 
 ### Tangkapan layar
 
+- _Halaman baru #1_
+  <br>![gambar](aset/image-30.png)
 - _Peningkatan #2 dan #3 - Sebelum_
   <br>![gambar](aset/image-28.png)
 - _Peningkatan #2 dan #3 - Sesudah_
   <br>![gambar](aset/image-29.png)
-- _Halaman baru #1_
-  <br>![gambar](aset/image-30.png)
 
 ---
 
@@ -322,7 +352,7 @@ _Tidak ada halaman baru dan perbaikan bug di rilis ini._
 **Halaman baru:**
 1. Halaman beranda
    
-   Pengganti halaman pilih acara. Di sini akan terlihat berapa acara yang dimiliki tiap penyelenggara. Ada filter juga, cari acara yang lama lebih gampang.
+   Pengganti halaman pilih acara. Di sini akan terlihat berapa acara yang dimiliki tiap penyelenggara. Ada filter juga, cari acara yang lama lebih mudah.
 
 **Peningkatan fitur:**
 1. Revamp menu (lanjutan)
