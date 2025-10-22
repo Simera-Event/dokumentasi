@@ -38,7 +38,7 @@
 
 |           | Sistem  | Situs web |
 | --------- |:-------:|:---------:|
-| **Versi** |`c5eda7c`|`3b5042b`  |
+| **Versi** |`7fb8000`|`3b5042b`  |
 
 ### Perubahan
    
