@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [22 Oktober 2025](#22-oktober-2025)
 - [13 Oktober 2025](#13-oktober-2025)
 - [2 Oktober 2025](#2-oktober-2025)
 - [24 September 2025](#24-september-2025)
@@ -33,6 +34,40 @@
 
 ---
 
+## 22 Oktober 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`c5eda7c`|`3b5042b`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Revamp kelola pengguna (lanjutan)
+   
+   Fitur buat dan ubah pengguna sudah bisa digunakan, termasuk kotak centang untuk mengubah beberapa pengguna sekaligus, misal untuk mengganti penyelenggara atau menonaktifkan akun. Selain itu, ada penambahan opsi untuk menampilkan waktu masuk terakhir.
+2. Di kelola pengguna, opsi filter penyelenggara sekarang diurutkan menurut abjad
+3. Di kelola pengguna dan beranda, sekarang hanya memuat 15 data pertama di awal untuk mempercepat proses. Klik "Selengkapnya..." untuk menampilkan semua data.
+4. Di beranda, sekarang bisa filter acara menurut nama tempat
+5. Di pantauan tukar, suara TTS sekarang mendukung kode bahasa baru pada Android 15
+
+**Perbaikan bug:**
+1. Di beranda, acara dari penyelenggara sebelumnya masih ditampilkan setelah memilih penyelenggara baru yang tidak memiliki acara
+2. Di header, tidak ada penanda menu yang sedang dipilih jika menu Simera dan menu Akun dinavigasi menggunakan keyboard
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1 - Sebelum_
+  <br>![gambar](aset/image-41.png)
+- _Peningkatan fitur #1 - Sesudah_
+  <br>![gambar](aset/image-42.png)
+- _Peningkatan fitur #3 dan #4_
+  <br>![gambar](aset/image-43.png)
+
+---
+
 ## 13 Oktober 2025
 
 |           | Sistem  | Situs web |
@@ -53,11 +88,11 @@ _Tidak ada halaman baru dan perbaikan bug di rilis ini._
 
 ### Tangkapan layar
 
-- _Peningkatan #1 dan #2 - Sebelum_
+- _Peningkatan fitur #1 dan #2 - Sebelum_
   <br>![gambar](aset/image-38.png)
-- _Peningkatan #1 - Sesudah_
+- _Peningkatan fitur #1 - Sesudah_
   <br>![gambar](aset/image-39.png)
-- _Peningkatan #2 - Sesudah_
+- _Peningkatan fitur #2 - Sesudah_
   <br>![gambar](aset/image-40.png)
 
 ---
@@ -84,11 +119,11 @@ _Tidak ada perbaikan bug di rilis ini._
 
 - _Halaman baru #1_
   <br>![gambar](aset/image-37.png)
-- _Peningkatan #1 - Sebelum_
+- _Peningkatan fitur #1 - Sebelum_
   <br>![gambar](aset/image-34.png)
-- _Peningkatan #1 - Sesudah_
+- _Peningkatan fitur #1 - Sesudah_
   <br>![gambar](aset/image-35.png)
-- _Peningkatan #2 dan #3_
+- _Peningkatan fitur #2 dan #3_
   <br>![gambar](aset/image-36.png)
 
 ---
@@ -143,7 +178,7 @@ _Tidak ada perbaikan bug di rilis ini._
   <br>![gambar](aset/image-32.png)
 - _Halaman baru #1 - Pantauan berjalan_
   <br>![gambar](aset/image-33.png)
-- _Peningkatan #1_
+- _Peningkatan fitur #1_
   <br>![gambar](aset/image-31.png)
 
 ---
@@ -254,9 +289,9 @@ _Tidak ada halaman baru di rilis ini._
 
 - _Halaman baru #1_
   <br>![gambar](aset/image-30.png)
-- _Peningkatan #2 dan #3 - Sebelum_
+- _Peningkatan fitur #2 dan #3 - Sebelum_
   <br>![gambar](aset/image-28.png)
-- _Peningkatan #2 dan #3 - Sesudah_
+- _Peningkatan fitur #2 dan #3 - Sesudah_
   <br>![gambar](aset/image-29.png)
 
 ---
