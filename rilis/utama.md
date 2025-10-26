@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [27 Oktober 2025](#27-oktober-2025)
 - [22 Oktober 2025](#22-oktober-2025)
 - [13 Oktober 2025](#13-oktober-2025)
 - [2 Oktober 2025](#2-oktober-2025)
@@ -31,6 +32,30 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 27 Oktober 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`b5dd050`|`3b5042b`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Di tukar, ada opsi untuk menampilkan info tambahan di bawah baris riwayat. Fitur ketuk baris untuk melihat rincian tidak lagi bisa digunakan.
+2. Di tukar, pakai masuk, dan pakai keluar, baris riwayat yang tidak bisa diklik akan dilewati saat dinavigasi menggunakan keyboard
+
+**Perbaikan bug:**
+1. Di kelola pengguna, masuk terakhir dari pengguna sebelumnya masih ditampilkan saat membuat pengguna baru
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1_
+  <br>![gambar](aset/image-44.png)!
 
 ---
 
