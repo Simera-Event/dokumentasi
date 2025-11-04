@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [4 November 2025](#4-november-2025)
 - [27 Oktober 2025](#27-oktober-2025)
 - [22 Oktober 2025](#22-oktober-2025)
 - [13 Oktober 2025](#13-oktober-2025)
@@ -32,6 +33,35 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 4 November 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`db581e0`|`3b5042b`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Nomor kursi di kode penukaran maupun kode pintu dilengkapi logika pengurutan baru yang mempertimbangkan adanya angka. Hal ini diterapkan di semua halaman terkait (daftar lengkap, cetak, temukan, dsb).
+2. Nomor kursi di kode penukaran maupun kode pintu memiliki batas karakter yang lebih besar, dari 12 menjadi 16 karakter
+3. Penambahan pengecekan waktu modifikasi saat memuat CSS agar cache browser terinvalidasi saat ada perubahan
+4. Standardisasi resolusi dan rasio kamera untuk lampiran menjadi 4:3, berhubung ada kamera yang masih 480p dan atau yang bermode wide
+5. Penambahan animasi saat memuat data
+
+**Perbaikan bug:**
+1. Di header, beberapa tautan pada menu Simera terpotong jika dibuka di tampilan seluler
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1 - Sebelum_
+  <br>![gambar](aset/image-45.png)
+- _Peningkatan fitur #1 - Sesudah_
+  <br>![gambar](aset/image-46.png)
 
 ---
 
