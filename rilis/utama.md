@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [11 November 2025](#11-november-2025)
 - [4 November 2025](#4-november-2025)
 - [27 Oktober 2025](#27-oktober-2025)
 - [22 Oktober 2025](#22-oktober-2025)
@@ -33,6 +34,33 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 11 November 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`9a3f7c2`|`3b5042b`  |
+
+### Perubahan
+
+**Halaman baru:**
+1. Halaman kelola penyalur: menampilkan semua penyalur yang terdaftar, berikut acara dan pengguna yang terhubung dengannya. Selain itu, penyalur baru bisa dibuat. Untuk penyalur yang sudah ada, baik nama, maupun warna yang digunakan dalam laporan penukaran mode grafik, bisa diubah.
+   
+**Peningkatan fitur:**
+1. Penambahan modul untuk mengurutkan kolom pada tabel. Tabel di kelola pelanggan dan penyalur sekarang bisa diurutkan.
+2. Penambahan animasi saat pindah halaman
+3. Perubahan logika untuk menampilkan tanggal dan waktu
+
+_Tidak ada perbaikan bug di rilis ini._
+
+### Tangkapan layar
+
+- _Halaman baru #1 - Daftar dan Peningkatan fitur #1_
+  <br>![gambar](aset/image-47.png)
+- _Halaman baru #1 - Rincian_
+  <br>![gambar](aset/image-48.png)
 
 ---
 
