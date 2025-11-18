@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [18 November 2025](#18-november-2025)
 - [11 November 2025](#11-november-2025)
 - [4 November 2025](#4-november-2025)
 - [27 Oktober 2025](#27-oktober-2025)
@@ -37,11 +38,36 @@
 
 ---
 
+## 18 November 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`76033ac`|`3b5042b`  |
+
+### Perubahan
+
+**Halaman baru:**
+1. Halaman kelola penyelenggara: menampilkan semua penyelenggara yang terdaftar, berikut acara dan pengguna yang terhubung dengannya. Selain itu, penyelenggara baru bisa dibuat. Untuk penyelenggara yang sudah ada, namanya bisa diubah.
+   
+**Peningkatan fitur:**
+1. Di kelola penyelenggara, modul pengurutan kolom tabel sudah diimplementasikan
+2. Di cetak kartu, ada perubahan tata letak minor terkait margin dan radius tepi
+3. Perubahan gaya bawaan jika sistem berjalan pada URL dengan akhiran ".local"
+
+_Tidak ada perbaikan bug di rilis ini._
+
+### Tangkapan layar
+
+- _Halaman baru #1_
+  <br>![gambar](aset/image-49.png)
+
+---
+
 ## 11 November 2025
 
 |           | Sistem  | Situs web |
 | --------- |:-------:|:---------:|
-| **Versi** |`9a3f7c2`|`3b5042b`  |
+| **Versi** |`3b5f773`|`3b5042b`  |
 
 ### Perubahan
 
