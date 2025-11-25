@@ -55,11 +55,6 @@
 
 _Tidak ada halaman baru dan perbaikan bug di rilis ini._
 
-### Tangkapan layar
-
-- _Halaman baru #1_
-  <br>![gambar](aset/image-49.png)
-
 ---
 
 ## 18 November 2025
