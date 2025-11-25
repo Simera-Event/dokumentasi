@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [25 November 2025](#25-november-2025)
 - [18 November 2025](#18-november-2025)
 - [11 November 2025](#11-november-2025)
 - [4 November 2025](#4-november-2025)
@@ -35,6 +36,29 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 25 November 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`b15d1e0`|`3b5042b`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Di fungsi untuk membaca NFC, tampilan SN diubah formatnya dari pair desimal (support 32 dan 64 bit) menjadi 10 digit desimal (hanya 32 bit)
+2. Di fungsi untuk menampilkan waktu pada tabel, format dibuat dapat menyesuaikan bahasa. Misal, "hari, tanggal bulan tahun" di bahasa Indonesia, "tahun bulan tanggal (hari)" di bahasa Jepang.
+3. Di daftar lengkap kode penukaran dan kode pintu, memori dialokasikan lebih besar untuk mendukung jumlah kode yang lebih banyak (solusi sementara)
+4. Di cetak kartu akses, ada penambahan margin sesuai saran dari percetakan
+
+_Tidak ada halaman baru dan perbaikan bug di rilis ini._
+
+### Tangkapan layar
+
+- _Halaman baru #1_
+  <br>![gambar](aset/image-49.png)
 
 ---
 
