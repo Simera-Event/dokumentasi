@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [2 Desember 2025](#2-desember-2025)
 - [25 November 2025](#25-november-2025)
 - [18 November 2025](#18-november-2025)
 - [11 November 2025](#11-november-2025)
@@ -36,6 +37,26 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 2 Desember 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`704ca94`|`3b5042b`  |
+
+### Perubahan
+   
+**Peningkatan fitur:**
+1. Di fungsi untuk membaca NFC, pengecekan bit dari tag diimplementasikan sehingga format tampilan SN menjadi pair desimal untuk 64 bit dan 10 digit desimal untuk 32 bit
+2. Di modul pengurutan kolom tabel, indikator kolom tabel yang bisa diurutkan diubah dari warna menjadi ikon
+3. Di kelola penyimpanan, modul pengurutan kolom tabel sudah diimplementasikan
+
+**Perbaikan bug:**
+1. Di kelola versi baru (pengguna, penyelenggara, penyalur, pelanggan), tombol buat baru dan ubah yang dipilih bisa terfokus lebih dari sekali jika dinavigasi menggunakan keyboard
+
+_Tidak ada halaman baru di rilis ini._
 
 ---
 
