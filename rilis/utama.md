@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [10 Desember 2025](#10-desember-2025)
 - [2 Desember 2025](#2-desember-2025)
 - [25 November 2025](#25-november-2025)
 - [18 November 2025](#18-november-2025)
@@ -40,6 +41,35 @@
 
 ---
 
+## 10 Desember 2025
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`d54d5e7`|`3b5042b`  |
+
+### Perubahan
+
+**Halaman baru:**
+1. Halaman kelola tempat: menampilkan semua tempat yang terdaftar menurut negara dan provinsi, berikut acara yang terhubung dengannya. Selain itu, tempat baru bisa dibuat. Untuk tempat yang sudah ada, baik nama, maupun lokasi seperti kota dan provinsi, bisa diubah.
+
+**Peningkatan fitur:**
+1. Di pengaturan acara, pembuatan penyelenggara dan penyalur baru dihapus. Pembuatan hanya bisa dilakukan dari menu masing-masing.
+2. Di kelola acara, pembuatan penyelenggara dan tempat baru dihapus. Pembuatan hanya bisa dilakukan dari menu masing-masing.
+3. Di kelola acara, pilihan tempat akan menampilkan nama kota
+4. Di kelola sesi pengguna, modul pengurutan kolom tabel sudah diimplementasikan. Sesi bisa ditampilkan dari yang paling baru ke paling lama.
+
+**Perbaikan bug:**
+1. Di kelola penyelenggara dan penyalur, panjang nama yang bisa dimasukkan terbatas di 64 karakter di mana seharusnya adalah 255 karakter sesuai konfigurasi database
+
+### Tangkapan layar
+
+- _Halaman baru #1 - Daftar_
+  <br>![gambar](aset/image-50.png)
+- _Halaman baru #1 - Rincian_
+  <br>![gambar](aset/image-51.png)
+
+---
+
 ## 2 Desember 2025
 
 |           | Sistem  | Situs web |
@@ -67,7 +97,7 @@ _Tidak ada halaman baru di rilis ini._
 | **Versi** |`b15d1e0`|`3b5042b`  |
 
 ### Perubahan
-   
+
 **Peningkatan fitur:**
 1. Di fungsi untuk membaca NFC, tampilan SN diubah formatnya dari pair desimal (support 32 dan 64 bit) menjadi 10 digit desimal (hanya 32 bit)
 2. Di fungsi untuk menampilkan waktu pada tabel, format dibuat dapat menyesuaikan bahasa. Misal, "hari, tanggal bulan tahun" di bahasa Indonesia, "tahun bulan tanggal (hari)" di bahasa Jepang.
@@ -113,7 +143,7 @@ _Tidak ada perbaikan bug di rilis ini._
 
 **Halaman baru:**
 1. Halaman kelola penyalur: menampilkan semua penyalur yang terdaftar, berikut acara dan pengguna yang terhubung dengannya. Selain itu, penyalur baru bisa dibuat. Untuk penyalur yang sudah ada, baik nama, maupun warna yang digunakan dalam laporan penukaran mode grafik, bisa diubah.
-   
+
 **Peningkatan fitur:**
 1. Penambahan modul untuk mengurutkan kolom pada tabel. Tabel di kelola pelanggan dan penyalur sekarang bisa diurutkan.
 2. Penambahan animasi saat pindah halaman
@@ -137,7 +167,7 @@ _Tidak ada perbaikan bug di rilis ini._
 | **Versi** |`db581e0`|`3b5042b`  |
 
 ### Perubahan
-   
+
 **Peningkatan fitur:**
 1. Nomor kursi di kode penukaran maupun kode pintu dilengkapi logika pengurutan baru yang mempertimbangkan adanya angka. Hal ini diterapkan di semua halaman terkait (daftar lengkap, cetak, temukan, dsb).
 2. Nomor kursi di kode penukaran maupun kode pintu memiliki batas karakter yang lebih besar, dari 12 menjadi 16 karakter
@@ -166,7 +196,7 @@ _Tidak ada halaman baru di rilis ini._
 | **Versi** |`b5dd050`|`3b5042b`  |
 
 ### Perubahan
-   
+
 **Peningkatan fitur:**
 1. Di tukar, ada opsi untuk menampilkan info tambahan di bawah baris riwayat. Fitur ketuk baris untuk melihat rincian tidak lagi bisa digunakan.
 2. Di tukar, pakai masuk, dan pakai keluar, baris riwayat yang tidak bisa diklik akan dilewati saat dinavigasi menggunakan keyboard
@@ -190,7 +220,7 @@ _Tidak ada halaman baru di rilis ini._
 | **Versi** |`7fb8000`|`3b5042b`  |
 
 ### Perubahan
-   
+
 **Peningkatan fitur:**
 1. Revamp kelola pengguna (lanjutan)
    
@@ -284,7 +314,7 @@ _Tidak ada perbaikan bug di rilis ini._
 | **Versi** |`b669634`|`e320b38`  |
 
 ### Perubahan
-   
+
 **Peningkatan fitur:**
 1. Metode baru di tetapkan kursi kode pintu (requestnya dipecah kecil-kecil, dan penambahan progress bar)
 2. Optimasi kueri dan koneksi DB di tetapkan kursi kode pintu (prosesnya akan semakin cepat) saat jumlah data besar
@@ -339,7 +369,7 @@ _Tidak ada perbaikan bug di rilis ini._
 | **Versi** |`c08aba2`|`e320b38`  |
 
 ### Perubahan
-   
+
 **Peningkatan fitur:**
 1. Metode baru di entri kode penukaran versi banyak (requestnya dipecah kecil-kecil, dan penambahan progress bar)
 2. Optimasi kueri dan koneksi DB di entri kode penukaran versi satuan maupun banyak (prosesnya akan semakin cepat)
@@ -361,7 +391,7 @@ _Tidak ada halaman baru di rilis ini._
 | **Versi** |`e983371`|`e320b38`  |
 
 ### Perubahan
-   
+
 **Peningkatan fitur:**
 1. Penyempurnaan alur bayar pesanan - berikan kode pintu - hubungkan dan jual
    
@@ -392,7 +422,7 @@ _Tidak ada halaman baru di rilis ini._
 | **Versi** |`9effe60`|`e320b38`  |
 
 ### Perubahan
-   
+
 **Peningkatan fitur:**
 1. Di kirim pesanan, fungsi tetapkan kursi sudah bisa digunakan
 2. Di kirim pesanan, ada tombol "lihat kode penukaran"
@@ -423,7 +453,7 @@ _Tidak ada halaman baru di rilis ini._
 1. Halaman kirim pesanan
    
    Fungsi kirim rincian pesanan sekarang berada di halaman ini. Nomor kursi untuk masing-masing kode penukaran nantinya bisa diatur di sini. Selain itu, ada juga penambahan fungsi untuk membatalkan terbitan atau menunda pengiriman rincian. Pembatalan terbitan juga akan menghapus kode penukaran terkait.
-   
+
 **Peningkatan fitur:**
 1. Di daftar lengkap pesanan, saat penyalur dipilih "(Semua penyalur)", akan muncul kolom baru: "Penyalur" di hasil unduh ke CSV
 2. Di bayar pesanan, jumlah rincian ditampilkan di samping harga untuk konfirmasi
