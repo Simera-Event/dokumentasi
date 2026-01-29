@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [29 Januari 2026](#29-januari-2026)
 - [8 Januari 2026](#8-januari-2026)
 - [Yang lebih lama](#yang-lebih-lama)
 - [Informasi lebih lanjut](#informasi-lebih-lanjut)
@@ -17,6 +18,21 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 29 Januari 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`47fb95a`|`3b5042b`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di sinkronisasi, bagian pencadangan dan pemulihan dari aplikasi seluler kini bisa diakses oleh petugas pintu
+
+_Tidak ada halaman baru dan perbaikan bug di rilis ini._
 
 ---
 
@@ -31,7 +47,7 @@
 **Peningkatan fitur:**
 1. Di kelola tempat, ada fitur untuk mengubah dan menambahkan negara, provinsi, dan kota
 2. Di sinkronisasi, bagian pemulihan dari aplikasi seluler, ada pengecekan jika acara terpilih tidak sesuai dengan data pencadangan
-3. Di sinkronisasi, bagian pemulihan dari aplikasi seluler, khusus via API, hasil pemulihan akan langsung ditampilkan langsung di layar, tidak lagi berupa fle
+3. Di sinkronisasi, bagian pemulihan dari aplikasi seluler, khusus via API, hasil pemulihan akan langsung ditampilkan langsung di layar, tidak lagi berupa file
 
 **Perbaikan bug:**
 1. Di sinkronisasi, bagian pemulihan dari aplikasi seluler, berkas gagal diproses jika informasi pengguna tidak dikirimkan ulang
