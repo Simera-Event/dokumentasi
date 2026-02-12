@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [12 Februari 2026](#12-februari-2026)
 - [29 Januari 2026](#29-januari-2026)
 - [8 Januari 2026](#8-januari-2026)
 - [Yang lebih lama](#yang-lebih-lama)
@@ -18,6 +19,28 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 12 Februari 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`1d4ffaf`|`3b5042b`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di hapus data, keseluruhan data dari acara yang dipilih kini bisa dihapus oleh pengurus
+2. Pengguna otomatis bisa mengakses halaman versi lama (seperti /pengguna_v1, /pakai_masuk_v1, dsb) jika mendapat akses untuk versi baru, tanpa harus diberikan hak aksesnya secara manual
+3. Peningkatan pustaka multiselect dari versi 2.4.1 ke 2.4.24. Tombol pilihan di cetak, pakai masuk, pakai keluar, dan tukar akan mengalami sedikit perubahan tampilan.
+
+**Perbaikan bug:**
+1. Di kelola penyelenggara, penyelenggara baru tidak dapat dibuat
+2. Di kelola penyalur dan kelola pelanggan, lebar kolom pada tabel data tidak diatur dengan benar
+3. Di kelola penyalur, kelola pelanggan, dan kelola tempat, nama dengan simbol tertentu tidak sepenuhnya ditampilkan sebagai judul saat mengubah data
+
+_Tidak ada halaman baru di rilis ini._
 
 ---
 
