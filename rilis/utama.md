@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [26 Februari 2026](#26-februari-2026)
 - [12 Februari 2026](#12-februari-2026)
 - [29 Januari 2026](#29-januari-2026)
 - [8 Januari 2026](#8-januari-2026)
@@ -19,6 +20,38 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 26 Februari 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`b339e68`|`3b5042b`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Revamp kelola acara
+   
+   Halaman ini menampilkan semua acara yang terdaftar berdasarkan penyelenggaranya, berikut kategori dan penyalur yang terhubung dengannya. Ada filter juga, cari pengguna menurut nama dan waktu jadi lebih mudah.
+2. Di beranda, ditambahkan link untuk kelola acara dari penyelenggara yang dipilih
+3. Di kelola pengguna, jumlah pengguna per peran sekarang juga dimunculkan di tampilan seluler
+4. Di kelola tempat, jumlah tempat per provinsi sekarang juga dimunculkan di tampilan seluler
+
+**Perbaikan bug:**
+1. Di menu kelola acara, penyelenggara tidak tampil jika acara terhubung ke lebih dari satu penyelenggara
+2. Di menu pengaturan konten, bahasa tampilan tidak bisa diubah di footer karena konflik dengan pilihan bahasa konten
+3. Di menu-menu kelola, tombol, kotak teks, dan kotak pilihan muncul lebih besar dari labelnya saat mengubah data di tampilan seluler
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1 - Sebelum dan Perbaikan bug #1_
+  <br>![gambar](aset/image-52.png)
+- _Peningkatan fitur #1 - Sesudah dan Perbaikan bug #1_
+  <br>![gambar](aset/image-53.png)
 
 ---
 
