@@ -34,7 +34,7 @@
 **Peningkatan fitur:**
 1. Revamp kelola acara
    
-   Halaman ini menampilkan semua acara yang terdaftar berdasarkan penyelenggaranya, berikut kategori dan penyalur yang terhubung dengannya. Ada filter juga, cari pengguna menurut nama dan waktu jadi lebih mudah.
+   Halaman ini menampilkan semua acara yang terdaftar berdasarkan penyelenggaranya, berikut kategori dan penyalur yang terhubung dengannya. Ada filter juga, cari acara menurut nama dan waktu jadi lebih mudah.
 2. Di beranda, ditambahkan link untuk kelola acara dari penyelenggara yang dipilih
 3. Di kelola pengguna, jumlah pengguna per peran sekarang juga dimunculkan di tampilan seluler
 4. Di kelola tempat, jumlah tempat per provinsi sekarang juga dimunculkan di tampilan seluler
