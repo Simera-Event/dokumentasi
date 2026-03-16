@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [16 Maret 2026](#16-maret-2026)
 - [26 Februari 2026](#26-februari-2026)
 - [12 Februari 2026](#12-februari-2026)
 - [29 Januari 2026](#29-januari-2026)
@@ -20,6 +21,38 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 16 Maret 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`c5bfef6`|`c98c812`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Revamp kelola acara (lanjutan)
+   
+   Fitur buat dan ubah acara sudah bisa digunakan, termasuk kotak centang untuk menonaktifkan beberapa acara sekaligus. Selain itu, acara baru bisa dibuat dan bisa langsung menambahkan kategori, penyalur, hingga opsi penjualan di situs web, serta dapat langsung dibuka tanpa pindah ke beranda. Untuk acara yang sudah ada, baik nama, penyelenggara, maupun tempat dan waktunya, bisa diubah. Tersedia filter untuk memilih penyelenggara dan tempat dengan lebih cepat.
+2. Di kelola acara, tersedia indikator tambahan pada kolom waktu jika acara berlangsung lebih dari satu hari
+
+**Perbaikan bug:**
+1. Di kelola acara, hanya penyelenggara pertama yang akan tersimpan jika acara terhubung ke lebih dari satu penyelenggara saat mengubah data
+2. Di kelola acara, penyelenggara, penyalur, dan pelanggan, pengurutan kolom tabel tidak menerapkan filter sehingga yang ditampilkan adalah data sebelum difilter
+3. Di beranda, kelola tempat, dan kelola pengguna, indikator filter teks tidak dibersihkan setelah berganti ke filter pilihan
+4. [Situs web] Di header, ikon bahasa mengarah ke gambar yang tidak ada
+5. [Situs web] Di halaman detail acara, terdapat separator berlebih pada pilihan kategori terakhir
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1 - Sebelum dan Perbaikan bug #1_
+  <br>![gambar](aset/image-54.png)
+- _Peningkatan fitur #1 - Sesudah dan Perbaikan bug #1_
+  <br>![gambar](aset/image-55.png)
 
 ---
 
