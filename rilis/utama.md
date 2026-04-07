@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [6 April 2026](#16-april-2026)
 - [16 Maret 2026](#16-maret-2026)
 - [26 Februari 2026](#26-februari-2026)
 - [12 Februari 2026](#12-februari-2026)
@@ -21,6 +22,21 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 6 April 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`6571d4c`|`c98c812`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di kelola acara, acara baru dapat dibuat berdasarkan rincian dari acara yang sudah ada melalui fitur gandakan.
+
+_Tidak ada halaman baru dan perbaikan bug di rilis ini._
 
 ---
 
