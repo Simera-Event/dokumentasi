@@ -10,7 +10,8 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
-- [6 April 2026](#16-april-2026)
+- [24 April 2026](#24-april-2026)
+- [6 April 2026](#6-april-2026)
 - [16 Maret 2026](#16-maret-2026)
 - [26 Februari 2026](#26-februari-2026)
 - [12 Februari 2026](#12-februari-2026)
@@ -22,6 +23,27 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 24 April 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`c7e6307`|`eed1ac0`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di daftar lengkap kode pintu, ada penambahan kolom "durasi" yang menghitung lama antara pakai masuk dan pakai keluar, baik saat ditampilkan maupun ekspor ke CSV
+2. Di tukar kode penukaran, informasi tambahan sekarang akan langsung ditampilkan di awal, dengan tetap menyediakan opsi untuk menyembunyikannya
+3. Di tukar kode penukaran, kondisi apakah informasi tambahan ditampilkan atau disembunyikan akan dipertahankan saat muat ulang halaman, mengikuti pola tabel data di laporan grafik
+4. [Sistem dan situs web] Di koneksi ke database, sql mode diubah agar mendukung konfigurasi server baru (keperluan migrasi)
+
+**Perbaikan bug:**
+1. Di kelola acara, fitur gandakan gagal menyimpan acara baru
+
+_Tidak ada halaman baru di rilis ini._
 
 ---
 
