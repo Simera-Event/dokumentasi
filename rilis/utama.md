@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [8 Mei 2026](#8-mei-2026)
 - [24 April 2026](#24-april-2026)
 - [6 April 2026](#6-april-2026)
 - [16 Maret 2026](#16-maret-2026)
@@ -23,6 +24,34 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 8 Mei 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`d43ce58`|`eed1ac0`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di kelola acara, penerbit kode pintu dapat ditentukan saat membuat acara baru
+2. Di kelola acara, penerbit kode pintu dan penjualan di situs web dapat disalin saat menggandakan acara yang sudah ada
+3. Di kelola acara, tersedia indikator tambahan pada kolom penyelenggara jika penerbit kode pintu adalah penyelenggara
+4. Di pengaturan acara, penerbit kode pintu dapat ditukar kembali walaupun kode pintu telah disiapkan jika penerbit kode pintu awal adalah Simera
+5. Di pakai masuk kode pintu, waktu pakai masuk selain yang pertama serta waktu pakai keluar selain yang terakhir sekarang disimpan ke database jika kode pintu dipakai masuk dan keluar berulang kali
+6. Di daftar lengkap kode pintu, kolom "durasi" dapat diklik untuk menampilkan riwayat pakai lengkap (tidak hanya masuk pertama dan keluar terakhir), serta durasi di dalam, di luar, dan total kunjungan
+7. Optimasi kueri di hapus data, serta pengaktifan kembali fungsi log
+
+_Tidak ada perbaikan bug dan halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1 dan #2_
+  <br>![gambar](aset/image-56.png)
+- _Peningkatan fitur #6_
+  <br>![gambar](aset/image-57.png)
 
 ---
 
