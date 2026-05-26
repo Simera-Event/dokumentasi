@@ -1,7 +1,7 @@
 <title>Catatan rilis sistem dan situs web | Cara Simera</title>
 
 [Beranda](..) &raquo; [Catatan rilis](.) &raquo; 
-# Sistem dan situs web (2025 H1)
+# Sistem dan situs web (2025 H2)
 &laquo; [Kembali ke terbaru](./utama)
 
 <blockquote>

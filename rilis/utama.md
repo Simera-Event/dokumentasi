@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [26 Mei 2026](#26-mei-2026)
 - [8 Mei 2026](#8-mei-2026)
 - [24 April 2026](#24-april-2026)
 - [6 April 2026](#6-april-2026)
@@ -24,6 +25,39 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 26 Mei 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`0fefd84`|`eed1ac0`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Revamp hapus data
+   
+   Sesuai dengan jenis data yang dipilih di awal, di sini akan ditampilkan hingga 25 kode penukaran, kode pintu, atau pesanan yang terakhir dihapus, termasuk waktu penghapusan dan pengguna yang melakukannya. Untuk melanjutkan hapus data seperti biasa, tombol "Hapus data yang ada" bisa diklik.
+2. Di riwayat pakai, data mulai rehat (pakai keluar sebelum yang terakhir) dan akhiri rehat (pakai masuk setelah yang pertama) sekarang sudah bisa dilihat
+3. Di riwayat pakai dan riwayat tukar, data sekarang sudah bisa diunduh ke CSV
+4. Implementasi model kategori untuk buat/perbarui/hapus data di kelola acara dan pengaturan acara
+5. Optimasi rendering dan pengiriman data di riwayat pakai dan riwayat tukar
+
+**Perbaikan bug:**
+1. Di daftar kode pintu, durasi di dalam gagal ditampilkan
+2. Di daftar kode pintu, kolom "durasi" tidak muncul meski pemakaian sudah lebih dari satu kali di tampilan seluler
+3. Di kelola penyimpanan, kolom "berakhir pada" memiliki judul yang salah di tampilan seluler
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1_
+  <br>![gambar](aset/image-58.png)
+- _Peningkatan fitur #2 dan #3_
+  <br>![gambar](aset/image-59.png)
 
 ---
 
