@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [8 Juni 2026](#8-juni-2026)
 - [26 Mei 2026](#26-mei-2026)
 - [8 Mei 2026](#8-mei-2026)
 - [24 April 2026](#24-april-2026)
@@ -25,6 +26,36 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 8 Juni 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`113cca3`|`eed1ac0`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Revamp sinkronisasi data
+   
+   Informasi acara kini ditampilkan di awal bersamaan dengan informasi sistem. Untuk melanjutkan sinkronisasi data seperti biasa, tombol "Kirim" dan "Terima" bisa diklik yang akan menampilkan pilihannya masing-masing.
+2. Di riwayat pakai, ringkasan durasi dari masing-masing kode pintu, berupa jumlah rehat, durasi di dalam, durasi di luar, dan durasi kunjungan, sekarang dapat diunduh dengan mengeklik tombol "Unduh ringkasan"
+3. Di kelola acara, formulir untuk membuat acara baru atau menggandakan acara yang sudah akan dinonaktifkan saat kapasitas acara sudah penuh 
+4. Optimasi rendering dan pengambilan data di semua halaman dengan memindah JavaScript dari inline ke eksternal
+
+**Perbaikan bug:**
+1. Penggantian bahasa tidak mempertahankan anchor halaman yang sedang diakses, misal mengubah bahasa akan mengembalikan tampilan ke daftar acara walaupun tampilan saat ini adalah buat acara baru
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1_
+  <br>![gambar](aset/image-60.png)
+- _Peningkatan fitur #2_
+  <br>![gambar](aset/image-61.png)
 
 ---
 
