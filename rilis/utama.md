@@ -33,7 +33,7 @@
 
 |           | Sistem  | Situs web |
 | --------- |:-------:|:---------:|
-| **Versi** |`113cca3`|`eed1ac0`  |
+| **Versi** |`032d64b`|`eed1ac0`  |
 
 ### Perubahan
 
