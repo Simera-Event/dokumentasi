@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [23 Juni 2026](#23-juni-2026)
 - [8 Juni 2026](#8-juni-2026)
 - [26 Mei 2026](#26-mei-2026)
 - [8 Mei 2026](#8-mei-2026)
@@ -26,6 +27,28 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 23 Juni 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`e2857b5`|`eed1ac0`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Revamp siapkan kode pintu
+   
+   Informasi tindakan terkait penerbit kode pintu seperti "Terbitkan secara mandiri", atau "Muatkan dari penyelenggara" kini ditampilkan. Berpindah kategori sekarang tidak memerlukan muat ulang halaman sehingga menjadi lebih cepat.
+2. Di hapus data, kode penukaran dan kode pintu yang telah dihapus sekarang bisa didaur ulang
+3. Implementasi model tiket untuk buat/perbarui/hapus data di siapkan kode pintu, pengaturan acara, dan hapus data
+
+**Perbaikan bug:**
+1. Sistem mengembalikan pesan berhasil saat membuat atau mengubah data meski sebenarnya gagal karena sudah ada data yang sama sebelumnya
+
+_Tidak ada halaman baru di rilis ini._
 
 ---
 
