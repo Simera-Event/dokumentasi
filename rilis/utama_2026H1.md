@@ -1,7 +1,7 @@
 <title>Catatan rilis sistem dan situs web | Cara Simera</title>
 
 [Beranda](..) &raquo; [Catatan rilis](.) &raquo; 
-# Sistem dan situs web (Terbaru)
+# Sistem dan situs web (2026 H1)
 
 <blockquote>
 
@@ -132,7 +132,7 @@ _Tidak ada halaman baru di rilis ini._
 6. Di daftar lengkap kode pintu, kolom "durasi" dapat diklik untuk menampilkan riwayat pakai lengkap (tidak hanya masuk pertama dan keluar terakhir), serta durasi di dalam, di luar, dan total kunjungan
 7. Optimasi kueri di hapus data, serta pengaktifan kembali fungsi log
 
-_Tidak ada perbaikan bug dan halaman baru di rilis ini._
+_Tidak ada halaman baru dan perbaikan bug di rilis ini._
 
 ### Tangkapan layar
 
