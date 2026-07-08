@@ -2,6 +2,7 @@
 
 [Beranda](..) &raquo; [Catatan rilis](.) &raquo; 
 # Sistem dan situs web (2026 H1)
+&laquo; [Kembali ke terbaru](./utama)
 
 <blockquote>
 
