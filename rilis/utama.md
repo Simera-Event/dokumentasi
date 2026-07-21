@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [21 Juli 2026](#21-juli-2026)
 - [7 Juli 2026](#7-juli-2026)
 - [Yang lebih lama](#yang-lebih-lama)
 - [Informasi lebih lanjut](#informasi-lebih-lanjut)
@@ -17,6 +18,24 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 21 Juli 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`eb8facc`|`eed1ac0`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Pengarsipan kode lama sebelum revamp. Versi lama dari beranda, menu kelola acara, kelola pengguna, entri kode penukaran, dan siapkan kode pintu bisa diakses dengan URL khusus.
+
+**Perbaikan bug:**
+1. Muncul kotak peringatan terus menerus saat pemindai kamera tidak menemukan kode QR atau barcode (efek peningkatan fitur #3 rilis [7 Juli 2026](#7-juli-2026))
+
+_Tidak ada halaman baru di rilis ini._
 
 ---
 
