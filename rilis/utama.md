@@ -21,6 +21,27 @@
 
 ---
 
+## 28 Juli 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`eaef779`|`eed1ac0`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Pengarsipan kode lama sebelum revamp (lanjutan). API lama dipisahkan dari API yang digunakan saat ini.
+2. Penyesuaian fungsi remot ke peladen lokal karena ada perubahan di sisi pihak ketiga
+3. Penyesuaian kamera yang digunakan untuk memindai dan menambah lampiran jika perangkat memiliki banyak kamera
+4. Optimasi kueri di perhitungan jumlah kode penukaran dan kode pintu per kategori
+
+**Perbaikan bug:**
+1. Muncul kotak peringatan saat menambah lampiran menggunakan kamera (efek peningkatan fitur #3 rilis [7 Juli 2026](#7-juli-2026))
+
+_Tidak ada halaman baru di rilis ini._
+
+---
+
 ## 21 Juli 2026
 
 |           | Sistem  | Situs web |
