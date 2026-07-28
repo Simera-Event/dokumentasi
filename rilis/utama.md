@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [28 Juli 2026](#28-juli-2026)
 - [21 Juli 2026](#21-juli-2026)
 - [7 Juli 2026](#7-juli-2026)
 - [Yang lebih lama](#yang-lebih-lama)
