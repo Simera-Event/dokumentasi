@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [4 Agustus 2026](#4-agustus-2026)
 - [28 Juli 2026](#28-juli-2026)
 - [21 Juli 2026](#21-juli-2026)
 - [7 Juli 2026](#7-juli-2026)
@@ -19,6 +20,35 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 4 Agustus 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`e3e3d29`|`eed1ac0`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di daftar lengkap kode pintu, informasi jumlah pakai dipindah dari kolom "status" ke "durasi".
+
+   Informasi jumlah pakai (dan durasi) akan muncul tanpa memedulikan status kode pintu, asalkan sudah pernah dipakai keluar. Dulu, jumlah pakai tidak muncul jika statusnya adalah diblokir. Sekarang, informasi status menjadi jelas karena tidak akan berubah menjadi jumlah pakai lagi jika statusnya adalah aktif.
+2. Optimasi kueri saat hapus kategori di pengaturan acara
+3. Optimasi rendering menu di header dengan memindah JavaScript dari inline ke eksternal
+
+**Perbaikan bug:**
+1. Di daftar kode pintu, durasi gagal ditampilkan saat diklik (efek peningkatan fitur #4 rilis [8 Juni 2026](./utama_2026H1#8-juni-2026))
+2. Di entri kode penukaran dan jual kode pintu, kotak teks tidak dapat diisi dan ketikan muncul di panel pemindai kode (efek rilis 30 Desember 2024)
+3. Tampilan kamera tidak muncul setelah dibuka untuk kedua kalinya dan seterusnya saat menambah lampiran menggunakan kamera (khusus Chrome)
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1 dan #2_
+  <br>![gambar](aset/image-62.png)
 
 ---
 
