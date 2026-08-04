@@ -47,7 +47,7 @@ _Tidak ada halaman baru di rilis ini._
 
 ### Tangkapan layar
 
-- _Peningkatan fitur #1 dan #2_
+- _Peningkatan fitur #1_
   <br>![gambar](aset/image-62.png)
 
 ---
