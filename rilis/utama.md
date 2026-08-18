@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [18 Agustus 2026](#18-agustus-2026)
 - [4 Agustus 2026](#4-agustus-2026)
 - [28 Juli 2026](#28-juli-2026)
 - [21 Juli 2026](#21-juli-2026)
@@ -20,6 +21,37 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+
+---
+
+## 18 Agustus 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`1fbfae0`|`d2f6075`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di entri kode penukaran dan siapkan kode pintu, log kueri dinonaktifkan agar tidak memenuhi penyimpanan
+2. Di kelola acara, proyek acara dapat dibuka/ditutup/dialihkan (tergantung acara yang sedang dibuka) dan halaman penjualan di situs web dapat dibuka secara langsung saat sedang melihat rincian acara
+3. Di beranda, sekarang acara yang sedang dibuka proyeknya dapat diubah dengan mengeklik tombol "Ubah"
+4. Di judul tab dan header, tersedia indikator tambahan jika mengakses lingkungan uji coba
+5. Tersedia indikator tambahan pada log kueri sistem jika berasal dari lingkungan uji coba
+6. [Situs web] Pemisahan ketergantungan dengan sistem utama agar mendukung konfigurasi server baru (keperluan migrasi)
+
+**Perbaikan bug:**
+1. Nama acara di header tidak otomatis berubah setelah mengubah nama acara yang sedang dibuka proyeknya
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #2_
+  <br>![gambar](aset/image-63.png)
+- _Peningkatan fitur #4_
+  <br>![gambar](aset/image-64.png)
 
 ---
 
