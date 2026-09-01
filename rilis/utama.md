@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [1 September 2026](#1-september-2026)
 - [18 Agustus 2026](#18-agustus-2026)
 - [4 Agustus 2026](#4-agustus-2026)
 - [28 Juli 2026](#28-juli-2026)
@@ -22,6 +23,28 @@
 
 </blockquote>
 
+---
+
+## 1 September 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`7027bf8`|`d2f6075`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di kelola pengguna, daftar pengguna dapat diurutkan menurut terakhir masuk
+2. Di pakai masuk/keluar kode pintu, halaman siap menerima kode yang dikirim dari halaman lain (mengikuti tukar kode penukaran yang menerima kode dari halaman temukan)
+3. Di daftar lengkap kode penukaran, buat undian sekarang sudah bisa dilakukan (mengikuti daftar lengkap kode pintu)
+4. Di sinkronisasi data, data kode pintu dari sistem lokal bisa dicadangkan dengan format seluler untuk dipulihkan ke sistem online
+
+**Perbaikan bug:**
+1. Di entri kode penukaran, saat dijalankan di lokal, hanya baris pertama yang dapat dientri lalu muncul kotak peringatan (efek peningkatan fitur #1 rilis [18 Agustus 2026](#18-agustus-2026))
+2. Di cetak pesanan, kirim tautan dan log akses berhenti befungsi (efek peningkatan fitur #4 rilis [8 Juni 2026](./utama_2026H1#8-juni-2026))
+3. Di menu-menu kelola, kolom dengan angka yang sama muncul lebih dari satu kali pada tabel tidak dapat diurutkan
+
+_Tidak ada halaman baru di rilis ini._
 
 ---
 
