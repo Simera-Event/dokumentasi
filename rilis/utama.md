@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [15 September 2026](#15-september-2026)
 - [1 September 2026](#1-september-2026)
 - [18 Agustus 2026](#18-agustus-2026)
 - [4 Agustus 2026](#4-agustus-2026)
@@ -22,6 +23,49 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 15 September 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`b605c76`|`d2f6075`  |
+
+### Perubahan
+
+**Halaman baru:**
+1. Halaman pengurusan kode pintu. Fungsi daftar lengkap kode pintu sekarang berada di halaman ini. Dengan perubahan dan penambahan fitur sbb:
+   1. Beranda
+      Ini adalah fitur baru di mana tindakan terhadap kode pintu dapat dipilih. Di antaranya adalah: telusuri, unduh, jelajahi, dan tindakan lain seperti buat undian atau paksa pakai keluar. Ini menyelesaikan masalah sebelumnya di mana filter tidak dapat dilakukan saat jumlah kode pintu yang disiapkan terlalu banyak, karena sistem harus menunggu seluruh kode selesai diambil terlebih dahulu.
+   2. Telusuri
+      Ini adalah pengganti fitur filter dari halaman daftar lengkap kode pintu terdahulu. Fitur ini sekarang dilengkapi dengan pilihan untuk memindai lewat kamera maupun NFC agar lebih nyaman digunakan pada laptop tanpa alat scanner. Selain itu, fitur ini akan selalu mengambil data terbaru ketika penelusuran dilakukan. Ini menyelesaikan masalah sebelumnya di mana data yang ditampilkan setelah filter mungkin usang, karena data hanya diambil sekali saat memuat halaman di awal dan tidak diambil ulang saat filter dilakukan ataupun diubah.
+   3. Unduh semua ke CSV
+      Ini adalah fitur dengan nama yang sama dari halaman daftar lengkap kode pintu terdahulu. Fitur ini sekarang dilengkapi dengan pilihan untuk mengunduh dengan kolom hanya berisi kode dan nomor kursinya saja (misal untuk keperluan percetakan), ataupun dengan baris hanya berisi kode yang diblokir (misal untuk keperluan pelacakan).
+   4. Jelajahi (bagian dari Lain-lain)
+      Ini adalah pengganti fitur utama dari halaman daftar lengkap kode pintu terdahulu. Fitur ini sekarang dilengkapi dengan pilihan untuk mengurutkan tabel berdasarkan kolom tertentu, dan tindakan tambahan di ujung kolom untuk: lihat (kode QR), salin kode, salin rincian (kode beserta kategori dan kursi), blokir/lepas blokir, pakai masuk/pakai keluar, dan batal pakai/hapus. Pilihan tindakan yang tersedia akan mengikuti kondisi dari masing-masing kode pintu.
+   5. Lain-lain
+      Fitur buat undian dan paksa pakai keluar dari halaman daftar lengkap kode pintu terdahulu sekarang berada di bagian ini. Tidak ada perubahan di sini.
+
+**Peningkatan fitur:**
+1. Di judul tab, judul dari halaman yang sedang dibuka akan ditampilkan di samping nama acara untuk mempermudah navigasi pada browser
+2. Di menu samping, tampilan otomatis bergeser ke link halaman yang sedang dibuka sehingga akan tetap terlihat meski ada di urutan bawah
+3. Di daftar lengkap kode penukaran dan kode pintu, sekarang bisa menampilkan kode yang diblokir saja ataupun sebaliknya
+
+**Perbaikan bug:**
+1. Di kelola tempat (pilihan negara), kelola penyimpanan (pilihan jenis lampiran dan log), dan hapus data (jenis data), tidak bisa dinavigasi menggunakan keyboard
+2. Di entri kode penukaran dan siapkan kode pintu, pilihan kategori tidak bisa dinavigasi menggunakan keyboard
+
+### Tangkapan layar
+
+- _Halaman baru #1 - Beranda_
+  <br>![gambar](aset/image-65.png)
+- _Halaman baru #1 - Jelajahi_
+  <br>![gambar](aset/image-66.png)
+- _Peningkatan fitur #1_
+  <br>![gambar](aset/image-67.png)
+- _Peningkatan fitur #3_
+  <br>![gambar](aset/image-68.png)
 
 ---
 
