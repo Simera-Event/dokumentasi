@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [29 September 2026](#29-september-2026)
 - [15 September 2026](#15-september-2026)
 - [1 September 2026](#1-september-2026)
 - [18 Agustus 2026](#18-agustus-2026)
@@ -23,6 +24,53 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 29 September 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`e2a55e3`|`d2f6075`  |
+
+### Perubahan
+
+**Halaman baru:**
+1. Halaman pengurusan kode penukaran. Fungsi daftar lengkap kode penukaran sekarang berada di halaman ini. Dengan perubahan dan penambahan fitur sbb:
+   1. Beranda
+      
+      Ini adalah fitur baru di mana tindakan terhadap kode penukaran dapat dipilih. Di antaranya adalah: telusuri, unduh, jelajahi, dan buat undian. Ini menyelesaikan masalah sebelumnya di mana filter tidak dapat dilakukan saat jumlah kode penukaran yang dientri terlalu banyak, karena sistem harus menunggu seluruh kode selesai diambil terlebih dahulu.
+   2. Telusuri
+      
+      Ini adalah pengganti fitur filter dari halaman daftar lengkap kode penukaran terdahulu. Fitur ini sekarang dilengkapi dengan pilihan untuk memindai lewat kamera maupun NFC agar lebih nyaman digunakan pada laptop tanpa alat scanner. Selain itu, fitur ini akan selalu mengambil data terbaru ketika penelusuran dilakukan. Ini menyelesaikan masalah sebelumnya di mana data yang ditampilkan setelah filter mungkin usang, karena data hanya diambil sekali saat memuat halaman di awal dan tidak diambil ulang saat filter dilakukan ataupun diubah.
+   3. Unduh semua ke CSV
+      
+      Ini adalah fitur dengan nama yang sama dari halaman daftar lengkap kode penukaran terdahulu. Fitur ini sekarang dilengkapi dengan pilihan untuk mengunduh dengan kolom hanya berisi kode dan nomor kursinya saja (misal untuk keperluan percetakan), ataupun dengan baris hanya berisi kode yang terhubung ke kode pintu (misal untuk keperluan pelacakan).
+   4. Jelajahi (bagian dari Lain-lain)
+      
+      Ini adalah pengganti fitur utama dari halaman daftar lengkap kode penukaran terdahulu. Fitur ini sekarang dilengkapi dengan pilihan untuk mengurutkan tabel berdasarkan kolom tertentu, dan tindakan tambahan di ujung kolom untuk: lihat (kode QR), salin kode, salin rincian (kode beserta kategori, kursi, penyalur, dan nomor pesanan), blokir/lepas blokir, tukar/hubungkan, dan batal tukar/hapus. Pilihan tindakan yang tersedia akan mengikuti kondisi dari masing-masing kode penukaran.
+   5. Lain-lain
+      
+      Fitur buat undian dari halaman daftar lengkap kode penukaran terdahulu sekarang berada di bagian ini. Tidak ada perubahan di sini.
+
+**Peningkatan fitur:**
+1. Di menu samping, link halaman yang ditampilkan hanya yang berkaitan dengan pengarsipan jika pengarsipan kode lama sebelum revamp sedang dibuka
+2. Di temukan kode penukaran, tukar kode penukaran, dan hapus data, pilihan penyalur sekarang diurutkan berdasarkan abjad
+3. Di daftar lengkap kode penukaran, sekarang bisa menampilkan kode yang dihubungkan ke kode pintu saja ataupun sebaliknya
+4. Di sinkronisasi data, pengguna yang menyiapkan, mencetak, menjual, dan memakai masuk/keluar kode pintu, serta mengentri dan menukar kode penukaran akan diatur ke pengguna yang melakukan pemulihan data ke sistem lokal karena ada perbedaan urutan pengguna pada data.
+
+**Perbaikan bug:**
+1. Di pengurusan kode pintu, nama pembeli dengan 5 huruf atau kurang tidak bisa ditelusuri
+2. Di daftar lengkap kode penukaran, pilihan kategori tidak menampilkan jumlah kode sesuai penyalur yang sedang dipilih (efek peningkatan fitur #3 rilis [1 September 2026](#1-september-2026))
+
+### Tangkapan layar
+
+- _Halaman baru #1 - Beranda_
+  <br>![gambar](aset/image-69.png)
+- _Halaman baru #1 - Jelajahi_
+  <br>![gambar](aset/image-70.png)
+- _Peningkatan fitur #3_
+  <br>![gambar](aset/image-71.png)
 
 ---
 
