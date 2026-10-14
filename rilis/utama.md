@@ -50,12 +50,12 @@
 5. Di sinkronisasi data, data rehat kode pintu (waktu pakai keluar dan masuk kembali), serta pantauan kode penukaran sekarang (kabar per saluran) dapat dipulihkan ke sistem lokal
 6. Perubahan gaya bawaan jika sistem berjalan pada URL dengan akhiran ".lan" dan ".offline"
 7. Pelacakan jumlah hit dan ukuran data per sesi pengguna untuk analisis serangan
+8. Optimasi pengurutan kolom tabel untuk tipe data teks, waktu, dan angka dengan memindah JavaScript dari inline ke eksternal
 
 **Perbaikan bug:**
 1. Di judul tab, judul dari halaman yang sedang dibuka gagal ditampilkan di samping nama acara jika nama acara mengandung tanda petik
 2. Di pengurusan kode penukaran, nomor pesanan tidak bisa diurutkan
 3. Di pengurusan kode penukaran, nomor kursi dan nama pembeli tidak bisa ditelusuri
-4. Optimasi pengurutan kolom tabel untuk tipe data teks, waktu, dan angka dengan memindah JavaScript dari inline ke eksternal
 
 _Tidak ada halaman baru di rilis ini._
 
