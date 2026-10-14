@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [13 Oktober 2026](#13-oktober-2026)
 - [29 September 2026](#29-september-2026)
 - [15 September 2026](#15-september-2026)
 - [1 September 2026](#1-september-2026)
@@ -24,6 +25,50 @@
 <!-- /code_chunk_output -->
 
 </blockquote>
+
+---
+
+## 13 Oktober 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`1097703`|`d2f6075`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Di laporan acara bagian rincian grafik, aktivitas terkini sekarang dipecah menjadi dua:
+   1. Periodik
+      
+      Ini adalah aktivitas terkini yang sudah ada. Jumlah yang ditampilkan adalah yang hanya terjadi pada menit tersebut, sehinga grafiknya bisa naik, mendatar, maupun turun. Bisa digunakan untuk mengetahui kapan aktivitas mulai meningkat atau melandai.
+   2. Kumulatif
+      
+      Ini adalah aktivitas terkini yang baru. Jumlah yang ditampilkan adalah gabungan dari awal hingga menit tersebut, sehingga grafiknya hanya bisa naik atau mendatar. Bisa digunakan untuk mengetahui kapan kode terproses sudah mencapai 25, 50%, atau 75%.
+2. Di entri kode penukaran dan siapkan kode pintu, pengguna akan diberikan informasi saat panjang kode yang dimasukkan melebihi batas 
+3. Di entri kode penukaran dan jual kode pintu, pilihan jumlah kolom info tambahan ditingkatkan menjadi 5 mengikuti jumlah lampiran
+4. Di pengurusan kode penukaran, kode penukaran dapat dihubungkan kembali maupun diputus hubungannya dengan kode pintu. Ini menyelesaikan masalah sebelumnya di mana kode penukaran lupa dihubungkan saat penukaran dan sudah hilang dari riwayat, maupun kode penukaran masih terhubung meskipun penukarannya telah dibatalkan.
+5. Di sinkronisasi data, data rehat kode pintu (waktu pakai keluar dan masuk kembali), serta pantauan kode penukaran sekarang (kabar per saluran) dapat dipulihkan ke sistem lokal
+6. Perubahan gaya bawaan jika sistem berjalan pada URL dengan akhiran ".lan" dan ".offline"
+7. Pelacakan jumlah hit dan ukuran data per sesi pengguna untuk analisis serangan
+
+**Perbaikan bug:**
+1. Di judul tab, judul dari halaman yang sedang dibuka gagal ditampilkan di samping nama acara jika nama acara mengandung tanda petik
+2. Di pengurusan kode penukaran, nomor pesanan tidak bisa diurutkan
+3. Di pengurusan kode penukaran, nomor kursi dan nama pembeli tidak bisa ditelusuri
+4. Optimasi pengurutan kolom tabel untuk tipe data teks, waktu, dan angka dengan memindah JavaScript dari inline ke eksternal
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1_
+  <br>![gambar](aset/image-72.png)
+- _Peningkatan fitur #4 - Hubungkan_
+  <br>![gambar](aset/image-73.png)
+- _Peningkatan fitur #4 - Putus-hubungkan_
+  <br>![gambar](aset/image-74.png)
+- _Peningkatan fitur #7_
+  <br>![gambar](aset/image-75.png)
 
 ---
 
@@ -57,7 +102,7 @@
 1. Di menu samping, link halaman yang ditampilkan hanya yang berkaitan dengan pengarsipan jika pengarsipan kode lama sebelum revamp sedang dibuka
 2. Di temukan kode penukaran, tukar kode penukaran, dan hapus data, pilihan penyalur sekarang diurutkan berdasarkan abjad
 3. Di daftar lengkap kode penukaran, sekarang bisa menampilkan kode yang dihubungkan ke kode pintu saja ataupun sebaliknya
-4. Di sinkronisasi data, pengguna yang menyiapkan, mencetak, menjual, dan memakai masuk/keluar kode pintu, serta mengentri dan menukar kode penukaran akan diatur ke pengguna yang melakukan pemulihan data ke sistem lokal karena ada perbedaan urutan pengguna pada data.
+4. Di sinkronisasi data, pengguna yang menyiapkan, mencetak, menjual, dan memakai masuk/keluar kode pintu, serta mengentri dan menukar kode penukaran akan diatur ke pengguna yang melakukan pemulihan data ke sistem lokal karena ada perbedaan urutan pengguna pada data
 
 **Perbaikan bug:**
 1. Di pengurusan kode pintu, nama pembeli dengan 5 huruf atau kurang tidak bisa ditelusuri
