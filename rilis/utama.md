@@ -10,6 +10,7 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2} -->
 <!-- code_chunk_output -->
 
+- [2 November 2026](#2-november-2026)
 - [13 Oktober 2026](#13-oktober-2026)
 - [29 September 2026](#29-september-2026)
 - [15 September 2026](#15-september-2026)
@@ -26,6 +27,43 @@
 
 </blockquote>
 
+---
+
+## 2 November 2026
+
+|           | Sistem  | Situs web |
+| --------- |:-------:|:---------:|
+| **Versi** |`80444c0`|`d2f6075`  |
+
+### Perubahan
+
+**Peningkatan fitur:**
+1. Revamp laporan
+   
+   Berpindah antara laporan ringkas dengan rincian tabel dan grafik untuk penukaran dan pintu sekarang bisa dilakukan melalui bilah navigasi sehingga menjadi lebih cepat. Waktu pengambilan laporan sekarang ditampilkan pada halaman. Jenis tindakan (seperti dicetak, dijual, dsb) sekarang bisa disembunyikan sepenuhnya dari tabel, termasuk judulnya, melalui pita pengaturan. Mengeklik pada judul tersebut tidak lagi menyembunyikan baris di bawahnya.
+2. Di laporan utama, sekarang terdapat mode gambaran umum yang menampilkan persentase penukaran, pintu, dan pesanan tanpa menyertakan perhtingan per kategori
+3. Di laporan utama, sekarang tabel bisa ditranspos di mana kategori berada pada sumbu vertikal, sehingga tabel tidak lagi melebar pada acara yang memiliki banyak kategori
+4. Di laporan penukaran, data sekarang bisa dihitung menurut nomor pesanan, baik yang belum ditukar sama sekali, sudah ditukar sebagian, atau ditukar seluruhnya. Jumlah pesanan pada tabel per kategori bisa menjadi tidak akurat dan lebih banyak yang seharusnya (seperti ditampilkan pada tabel per penyalur) jika ada pesanan yang terdiri dari banyak kategori dalam kode penukarannya.
+5. Memindai kode menggunakan kamera sekarang mendukung warna QR terbalik, misalnya putih di atas hitam
+
+**Perbaikan bug:**
+1. Di tukar kode penukaran dan daftar lengkap pesanan, halaman tidak bisa dibuka jika pengguna terhubung dengan salah satu penyalur
+2. Di hapus data, halaman tidak bisa dibuka jika nama acara mengandung simbol tertentu
+3. Tampilan kamera memunculkan gambar dari kamera telefoto, bukan kamera belakang biasa, saat memindai kode menggunakan kamera (khusus iOS)
+
+_Tidak ada halaman baru di rilis ini._
+
+### Tangkapan layar
+
+- _Peningkatan fitur #1 - Sebelum_
+  <br>![gambar](aset/image-76.png)
+- _Peningkatan fitur #1 - Sesudah_
+  <br>![gambar](aset/image-77.png)
+- _Peningkatan fitur #2 dan #3_
+  <br>![gambar](aset/image-78.png)
+- _Peningkatan fitur #4_
+  <br>![gambar](aset/image-79.png)
+  
 ---
 
 ## 13 Oktober 2026
